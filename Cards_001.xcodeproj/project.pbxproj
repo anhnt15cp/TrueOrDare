@@ -1,0 +1,927 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA505DE3A5E310036148175A /* Pods_Cards_001.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508F7259C1712CB67816A4AE /* Pods_Cards_001.framework */; };
+		CC323B742969950900BF5DD5 /* blackcat.gif in Resources */ = {isa = PBXBuildFile; fileRef = CC323B732969950800BF5DD5 /* blackcat.gif */; };
+		CC323B762969A60C00BF5DD5 /* spin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC323B752969A60C00BF5DD5 /* spin.mp3 */; };
+		CC770D6E29690AA9004CEB59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770D6D29690AA9004CEB59 /* AppDelegate.swift */; };
+		CC770D7029690AA9004CEB59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770D6F29690AA9004CEB59 /* SceneDelegate.swift */; };
+		CC770D7229690AA9004CEB59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770D7129690AA9004CEB59 /* ViewController.swift */; };
+		CC770D7529690AA9004CEB59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC770D7329690AA9004CEB59 /* Main.storyboard */; };
+		CC770D7729690AAC004CEB59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC770D7629690AAC004CEB59 /* Assets.xcassets */; };
+		CC770D7A29690AAC004CEB59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC770D7829690AAC004CEB59 /* LaunchScreen.storyboard */; };
+		CC770D8A29690B71004CEB59 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770D8929690B71004CEB59 /* APIService.swift */; };
+		CC770D8C29690CAB004CEB59 /* quay_chai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC770D8B29690CAB004CEB59 /* quay_chai.mp3 */; };
+		CC770D8E29690CC7004CEB59 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC770D8D29690CC7004CEB59 /* alarm.mp3 */; };
+		CC770D9129690D20004CEB59 /* Click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC770D8F29690D20004CEB59 /* Click.mp3 */; };
+		CC770D9229690D20004CEB59 /* CardFlip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC770D9029690D20004CEB59 /* CardFlip.mp3 */; };
+		CC770D9429690D26004CEB59 /* intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC770D9329690D26004CEB59 /* intro.mp3 */; };
+		CC770D9629690D38004CEB59 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770D9529690D38004CEB59 /* AudioService.swift */; };
+		CC770D9829690D40004CEB59 /* Mp3Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770D9729690D40004CEB59 /* Mp3Service.swift */; };
+		CC770D9A29690E76004CEB59 /* GameCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770D9929690E76004CEB59 /* GameCardResponse.swift */; };
+		CC770D9C29690E91004CEB59 /* GameWordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770D9B29690E91004CEB59 /* GameWordResponse.swift */; };
+		CC770DA429691059004CEB59 /* luckycat.gif in Resources */ = {isa = PBXBuildFile; fileRef = CC770DA329691059004CEB59 /* luckycat.gif */; };
+		CC770DA7296911D7004CEB59 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770DA5296911D7004CEB59 /* HomeVC.swift */; };
+		CC770DA8296911D7004CEB59 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC770DA6296911D7004CEB59 /* HomeVC.xib */; };
+		CC770DAA29691248004CEB59 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770DA929691248004CEB59 /* ExtensionColor.swift */; };
+		CC770DAC2969165A004CEB59 /* ExtensionUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770DAB2969165A004CEB59 /* ExtensionUIImage.swift */; };
+		CC770DB3296918F5004CEB59 /* ThemeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770DB1296918F5004CEB59 /* ThemeVC.swift */; };
+		CC770DB4296918F5004CEB59 /* ThemeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC770DB2296918F5004CEB59 /* ThemeVC.xib */; };
+		CC770DB72969194F004CEB59 /* SpinBottleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770DB52969194F004CEB59 /* SpinBottleVC.swift */; };
+		CC770DB82969194F004CEB59 /* SpinBottleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC770DB62969194F004CEB59 /* SpinBottleVC.xib */; };
+		CC770DBB2969195D004CEB59 /* ChooseCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770DB92969195D004CEB59 /* ChooseCardsVC.swift */; };
+		CC770DBC2969195D004CEB59 /* ChooseCardsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC770DBA2969195D004CEB59 /* ChooseCardsVC.xib */; };
+		CC770DBF2969196C004CEB59 /* QuizGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770DBD2969196C004CEB59 /* QuizGameVC.swift */; };
+		CC770DC02969196C004CEB59 /* QuizGameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC770DBE2969196C004CEB59 /* QuizGameVC.xib */; };
+		CC770DC5296919D9004CEB59 /* LevelGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770DC3296919D9004CEB59 /* LevelGameVC.swift */; };
+		CC770DC6296919D9004CEB59 /* LevelGameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC770DC4296919D9004CEB59 /* LevelGameVC.xib */; };
+		CC770DF629691DDF004CEB59 /* iCiel Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DC829691DDD004CEB59 /* iCiel Pacifico.ttf */; };
+		CC770DF729691DDF004CEB59 /* Cucho.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DC929691DDD004CEB59 /* Cucho.otf */; };
+		CC770DF829691DDF004CEB59 /* iCiel Rukola.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DCA29691DDE004CEB59 /* iCiel Rukola.ttf */; };
+		CC770DF929691DDF004CEB59 /* iCielAmerigraf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DCB29691DDE004CEB59 /* iCielAmerigraf.ttf */; };
+		CC770DFA29691DDF004CEB59 /* UVF - Kizo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DCC29691DDE004CEB59 /* UVF - Kizo.ttf */; };
+		CC770DFB29691DDF004CEB59 /* iCiel Finch ornaments.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DCD29691DDE004CEB59 /* iCiel Finch ornaments.ttf */; };
+		CC770DFC29691DDF004CEB59 /* iCielBambola.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DCE29691DDE004CEB59 /* iCielBambola.ttf */; };
+		CC770DFD29691DDF004CEB59 /* TALUHLA Borders.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DCF29691DDE004CEB59 /* TALUHLA Borders.ttf */; };
+		CC770DFE29691DDF004CEB59 /* Gotham-Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DD029691DDE004CEB59 /* Gotham-Ultra.otf */; };
+		CC770DFF29691DDF004CEB59 /* iCiel Altus Serif.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DD129691DDE004CEB59 /* iCiel Altus Serif.ttf */; };
+		CC770E0029691DDF004CEB59 /* Gotham-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DD229691DDE004CEB59 /* Gotham-Thin.otf */; };
+		CC770E0129691DDF004CEB59 /* Mijas-Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DD329691DDE004CEB59 /* Mijas-Ultra.otf */; };
+		CC770E0229691DDF004CEB59 /* ffonts.net.htm in Resources */ = {isa = PBXBuildFile; fileRef = CC770DD429691DDE004CEB59 /* ffonts.net.htm */; };
+		CC770E0329691DDF004CEB59 /* zitroneFY.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DD529691DDE004CEB59 /* zitroneFY.ttf */; };
+		CC770E0429691DDF004CEB59 /* iCiel Pacifico.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DD629691DDE004CEB59 /* iCiel Pacifico.otf */; };
+		CC770E0529691DDF004CEB59 /* iCielParisSerif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DD729691DDE004CEB59 /* iCielParisSerif-Bold.ttf */; };
+		CC770E0629691DDF004CEB59 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DD829691DDE004CEB59 /* Gotham-Medium.otf */; };
+		CC770E0729691DDF004CEB59 /* iCiel Kermel.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DD929691DDE004CEB59 /* iCiel Kermel.otf */; };
+		CC770E0829691DDF004CEB59 /* iCielParisSerif-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DDA29691DDE004CEB59 /* iCielParisSerif-Bold.otf */; };
+		CC770E0929691DDF004CEB59 /* iCiel Crocante.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DDB29691DDE004CEB59 /* iCiel Crocante.otf */; };
+		CC770E0A29691DDF004CEB59 /* iCielCadena.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DDC29691DDE004CEB59 /* iCielCadena.otf */; };
+		CC770E0B29691DDF004CEB59 /* Cucho Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DDD29691DDE004CEB59 /* Cucho Bold.otf */; };
+		CC770E0C29691DDF004CEB59 /* iCiel TALUHLA.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DDE29691DDE004CEB59 /* iCiel TALUHLA.otf */; };
+		CC770E0D29691DDF004CEB59 /* iCielSoupofJustice.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DDF29691DDE004CEB59 /* iCielSoupofJustice.otf */; };
+		CC770E0E29691DDF004CEB59 /* iCiel Altus.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DE029691DDE004CEB59 /* iCiel Altus.ttf */; };
+		CC770E0F29691DDF004CEB59 /* Pony.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DE129691DDE004CEB59 /* Pony.ttf */; };
+		CC770E1029691DDF004CEB59 /* iCielBambola.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DE229691DDE004CEB59 /* iCielBambola.otf */; };
+		CC770E1129691DDF004CEB59 /* iCiel Rukola.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DE329691DDE004CEB59 /* iCiel Rukola.otf */; };
+		CC770E1229691DDF004CEB59 /* Nabila.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DE429691DDE004CEB59 /* Nabila.ttf */; };
+		CC770E1329691DDF004CEB59 /* zitroneFY.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DE529691DDE004CEB59 /* zitroneFY.otf */; };
+		CC770E1429691DDF004CEB59 /* ffonts.net.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC770DE629691DDE004CEB59 /* ffonts.net.txt */; };
+		CC770E1529691DDF004CEB59 /* UVF LH Line1 Sans Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DE729691DDE004CEB59 /* UVF LH Line1 Sans Thin.ttf */; };
+		CC770E1629691DDF004CEB59 /* iCiel Altus.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DE829691DDE004CEB59 /* iCiel Altus.otf */; };
+		CC770E1729691DDF004CEB59 /* iCielSoupofJustice.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DE929691DDE004CEB59 /* iCielSoupofJustice.ttf */; };
+		CC770E1829691DDF004CEB59 /* quick_tips.html in Resources */ = {isa = PBXBuildFile; fileRef = CC770DEA29691DDE004CEB59 /* quick_tips.html */; };
+		CC770E1929691DDF004CEB59 /* iCiel Altus Extra.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DEB29691DDE004CEB59 /* iCiel Altus Extra.otf */; };
+		CC770E1A29691DDF004CEB59 /* iCiel Alina.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DEC29691DDE004CEB59 /* iCiel Alina.otf */; };
+		CC770E1B29691DDF004CEB59 /* iCiel Altus Extra.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DED29691DDE004CEB59 /* iCiel Altus Extra.ttf */; };
+		CC770E1C29691DDF004CEB59 /* iCiel Finch ornaments.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DEE29691DDE004CEB59 /* iCiel Finch ornaments.otf */; };
+		CC770E1D29691DDF004CEB59 /* iciel Cadena.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DEF29691DDE004CEB59 /* iciel Cadena.ttf */; };
+		CC770E1E29691DDF004CEB59 /* iCielAmerigraf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DF029691DDF004CEB59 /* iCielAmerigraf.otf */; };
+		CC770E1F29691DDF004CEB59 /* BreeSerif.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DF129691DDF004CEB59 /* BreeSerif.otf */; };
+		CC770E2029691DDF004CEB59 /* install-a-new-font.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC770DF229691DDF004CEB59 /* install-a-new-font.txt */; };
+		CC770E2129691DDF004CEB59 /* Cucho Ornament.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DF329691DDF004CEB59 /* Cucho Ornament.otf */; };
+		CC770E2229691DDF004CEB59 /* iCiel Kermel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DF429691DDF004CEB59 /* iCiel Kermel.ttf */; };
+		CC770E2329691DDF004CEB59 /* iCiel Altus Serif.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC770DF529691DDF004CEB59 /* iCiel Altus Serif.otf */; };
+		CC770E25296925B7004CEB59 /* ExtensionUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770E24296925B7004CEB59 /* ExtensionUiView.swift */; };
+		CC770E27296929F5004CEB59 /* luckycat2.gif in Resources */ = {isa = PBXBuildFile; fileRef = CC770E26296929F5004CEB59 /* luckycat2.gif */; };
+		CC8074CA29693194003FD3CA /* ChooseCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8074C829693194003FD3CA /* ChooseCardsCell.swift */; };
+		CC8074CB29693194003FD3CA /* ChooseCardsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC8074C929693194003FD3CA /* ChooseCardsCell.xib */; };
+		CC8074D029694233003FD3CA /* easy.json in Resources */ = {isa = PBXBuildFile; fileRef = CC8074CD29694233003FD3CA /* easy.json */; };
+		CC8074D129694233003FD3CA /* hard.json in Resources */ = {isa = PBXBuildFile; fileRef = CC8074CE29694233003FD3CA /* hard.json */; };
+		CC8074D229694233003FD3CA /* medium.json in Resources */ = {isa = PBXBuildFile; fileRef = CC8074CF29694233003FD3CA /* medium.json */; };
+		CC8074D4296942C1003FD3CA /* nhau.json in Resources */ = {isa = PBXBuildFile; fileRef = CC8074D3296942C1003FD3CA /* nhau.json */; };
+		CC8074D6296942DC003FD3CA /* tet.json in Resources */ = {isa = PBXBuildFile; fileRef = CC8074D5296942DC003FD3CA /* tet.json */; };
+		CC8074D9296972DC003FD3CA /* ContentPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8074D7296972DC003FD3CA /* ContentPagerViewCell.swift */; };
+		CC8074DA296972DC003FD3CA /* ContentPagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC8074D8296972DC003FD3CA /* ContentPagerViewCell.xib */; };
+		CC9FD25E29697B2900EDB4EB /* ExtensionTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FD25D29697B2900EDB4EB /* ExtensionTimeInterval.swift */; };
+		CC9FD26029698DC700EDB4EB /* catcat.gif in Resources */ = {isa = PBXBuildFile; fileRef = CC9FD25F29698DC700EDB4EB /* catcat.gif */; };
+		CC9FD263296990E200EDB4EB /* catpng.gif in Resources */ = {isa = PBXBuildFile; fileRef = CC9FD262296990E200EDB4EB /* catpng.gif */; };
+		CCE4D7B629692B8A00F99689 /* ShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4D7B529692B8A00F99689 /* ShowInfoView.swift */; };
+		CCE4D7B829692B9500F99689 /* ShowInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCE4D7B729692B9500F99689 /* ShowInfoView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A6EC19883C82B857D06754F /* Pods-Cards_001.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cards_001.debug.xcconfig"; path = "Target Support Files/Pods-Cards_001/Pods-Cards_001.debug.xcconfig"; sourceTree = "<group>"; };
+		307C968F5D16A9CA4E537337 /* Pods-Cards_001.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cards_001.release.xcconfig"; path = "Target Support Files/Pods-Cards_001/Pods-Cards_001.release.xcconfig"; sourceTree = "<group>"; };
+		508F7259C1712CB67816A4AE /* Pods_Cards_001.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cards_001.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC323B732969950800BF5DD5 /* blackcat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = blackcat.gif; sourceTree = "<group>"; };
+		CC323B752969A60C00BF5DD5 /* spin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spin.mp3; sourceTree = "<group>"; };
+		CC770D6A29690AA9004CEB59 /* Cards_001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards_001.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC770D6D29690AA9004CEB59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC770D6F29690AA9004CEB59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CC770D7129690AA9004CEB59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC770D7429690AA9004CEB59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC770D7629690AAC004CEB59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC770D7929690AAC004CEB59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC770D7B29690AAC004CEB59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC770D8929690B71004CEB59 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CC770D8B29690CAB004CEB59 /* quay_chai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quay_chai.mp3; sourceTree = "<group>"; };
+		CC770D8D29690CC7004CEB59 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		CC770D8F29690D20004CEB59 /* Click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Click.mp3; sourceTree = "<group>"; };
+		CC770D9029690D20004CEB59 /* CardFlip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CardFlip.mp3; sourceTree = "<group>"; };
+		CC770D9329690D26004CEB59 /* intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = intro.mp3; sourceTree = "<group>"; };
+		CC770D9529690D38004CEB59 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		CC770D9729690D40004CEB59 /* Mp3Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mp3Service.swift; sourceTree = "<group>"; };
+		CC770D9929690E76004CEB59 /* GameCardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardResponse.swift; sourceTree = "<group>"; };
+		CC770D9B29690E91004CEB59 /* GameWordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWordResponse.swift; sourceTree = "<group>"; };
+		CC770DA329691059004CEB59 /* luckycat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = luckycat.gif; sourceTree = "<group>"; };
+		CC770DA5296911D7004CEB59 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		CC770DA6296911D7004CEB59 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		CC770DA929691248004CEB59 /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
+		CC770DAB2969165A004CEB59 /* ExtensionUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIImage.swift; sourceTree = "<group>"; };
+		CC770DB1296918F5004CEB59 /* ThemeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeVC.swift; sourceTree = "<group>"; };
+		CC770DB2296918F5004CEB59 /* ThemeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeVC.xib; sourceTree = "<group>"; };
+		CC770DB52969194F004CEB59 /* SpinBottleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinBottleVC.swift; sourceTree = "<group>"; };
+		CC770DB62969194F004CEB59 /* SpinBottleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpinBottleVC.xib; sourceTree = "<group>"; };
+		CC770DB92969195D004CEB59 /* ChooseCardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCardsVC.swift; sourceTree = "<group>"; };
+		CC770DBA2969195D004CEB59 /* ChooseCardsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseCardsVC.xib; sourceTree = "<group>"; };
+		CC770DBD2969196C004CEB59 /* QuizGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGameVC.swift; sourceTree = "<group>"; };
+		CC770DBE2969196C004CEB59 /* QuizGameVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizGameVC.xib; sourceTree = "<group>"; };
+		CC770DC3296919D9004CEB59 /* LevelGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelGameVC.swift; sourceTree = "<group>"; };
+		CC770DC4296919D9004CEB59 /* LevelGameVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LevelGameVC.xib; sourceTree = "<group>"; };
+		CC770DC829691DDD004CEB59 /* iCiel Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Pacifico.ttf"; sourceTree = "<group>"; };
+		CC770DC929691DDD004CEB59 /* Cucho.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cucho.otf; sourceTree = "<group>"; };
+		CC770DCA29691DDE004CEB59 /* iCiel Rukola.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Rukola.ttf"; sourceTree = "<group>"; };
+		CC770DCB29691DDE004CEB59 /* iCielAmerigraf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iCielAmerigraf.ttf; sourceTree = "<group>"; };
+		CC770DCC29691DDE004CEB59 /* UVF - Kizo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UVF - Kizo.ttf"; sourceTree = "<group>"; };
+		CC770DCD29691DDE004CEB59 /* iCiel Finch ornaments.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Finch ornaments.ttf"; sourceTree = "<group>"; };
+		CC770DCE29691DDE004CEB59 /* iCielBambola.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iCielBambola.ttf; sourceTree = "<group>"; };
+		CC770DCF29691DDE004CEB59 /* TALUHLA Borders.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TALUHLA Borders.ttf"; sourceTree = "<group>"; };
+		CC770DD029691DDE004CEB59 /* Gotham-Ultra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Ultra.otf"; sourceTree = "<group>"; };
+		CC770DD129691DDE004CEB59 /* iCiel Altus Serif.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Altus Serif.ttf"; sourceTree = "<group>"; };
+		CC770DD229691DDE004CEB59 /* Gotham-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Thin.otf"; sourceTree = "<group>"; };
+		CC770DD329691DDE004CEB59 /* Mijas-Ultra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mijas-Ultra.otf"; sourceTree = "<group>"; };
+		CC770DD429691DDE004CEB59 /* ffonts.net.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ffonts.net.htm; sourceTree = "<group>"; };
+		CC770DD529691DDE004CEB59 /* zitroneFY.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = zitroneFY.ttf; sourceTree = "<group>"; };
+		CC770DD629691DDE004CEB59 /* iCiel Pacifico.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Pacifico.otf"; sourceTree = "<group>"; };
+		CC770DD729691DDE004CEB59 /* iCielParisSerif-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCielParisSerif-Bold.ttf"; sourceTree = "<group>"; };
+		CC770DD829691DDE004CEB59 /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.otf"; sourceTree = "<group>"; };
+		CC770DD929691DDE004CEB59 /* iCiel Kermel.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Kermel.otf"; sourceTree = "<group>"; };
+		CC770DDA29691DDE004CEB59 /* iCielParisSerif-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCielParisSerif-Bold.otf"; sourceTree = "<group>"; };
+		CC770DDB29691DDE004CEB59 /* iCiel Crocante.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Crocante.otf"; sourceTree = "<group>"; };
+		CC770DDC29691DDE004CEB59 /* iCielCadena.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iCielCadena.otf; sourceTree = "<group>"; };
+		CC770DDD29691DDE004CEB59 /* Cucho Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cucho Bold.otf"; sourceTree = "<group>"; };
+		CC770DDE29691DDE004CEB59 /* iCiel TALUHLA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel TALUHLA.otf"; sourceTree = "<group>"; };
+		CC770DDF29691DDE004CEB59 /* iCielSoupofJustice.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iCielSoupofJustice.otf; sourceTree = "<group>"; };
+		CC770DE029691DDE004CEB59 /* iCiel Altus.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Altus.ttf"; sourceTree = "<group>"; };
+		CC770DE129691DDE004CEB59 /* Pony.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pony.ttf; sourceTree = "<group>"; };
+		CC770DE229691DDE004CEB59 /* iCielBambola.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iCielBambola.otf; sourceTree = "<group>"; };
+		CC770DE329691DDE004CEB59 /* iCiel Rukola.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Rukola.otf"; sourceTree = "<group>"; };
+		CC770DE429691DDE004CEB59 /* Nabila.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nabila.ttf; sourceTree = "<group>"; };
+		CC770DE529691DDE004CEB59 /* zitroneFY.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = zitroneFY.otf; sourceTree = "<group>"; };
+		CC770DE629691DDE004CEB59 /* ffonts.net.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ffonts.net.txt; sourceTree = "<group>"; };
+		CC770DE729691DDE004CEB59 /* UVF LH Line1 Sans Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UVF LH Line1 Sans Thin.ttf"; sourceTree = "<group>"; };
+		CC770DE829691DDE004CEB59 /* iCiel Altus.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Altus.otf"; sourceTree = "<group>"; };
+		CC770DE929691DDE004CEB59 /* iCielSoupofJustice.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iCielSoupofJustice.ttf; sourceTree = "<group>"; };
+		CC770DEA29691DDE004CEB59 /* quick_tips.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = quick_tips.html; sourceTree = "<group>"; };
+		CC770DEB29691DDE004CEB59 /* iCiel Altus Extra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Altus Extra.otf"; sourceTree = "<group>"; };
+		CC770DEC29691DDE004CEB59 /* iCiel Alina.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Alina.otf"; sourceTree = "<group>"; };
+		CC770DED29691DDE004CEB59 /* iCiel Altus Extra.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Altus Extra.ttf"; sourceTree = "<group>"; };
+		CC770DEE29691DDE004CEB59 /* iCiel Finch ornaments.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Finch ornaments.otf"; sourceTree = "<group>"; };
+		CC770DEF29691DDE004CEB59 /* iciel Cadena.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iciel Cadena.ttf"; sourceTree = "<group>"; };
+		CC770DF029691DDF004CEB59 /* iCielAmerigraf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iCielAmerigraf.otf; sourceTree = "<group>"; };
+		CC770DF129691DDF004CEB59 /* BreeSerif.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BreeSerif.otf; sourceTree = "<group>"; };
+		CC770DF229691DDF004CEB59 /* install-a-new-font.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "install-a-new-font.txt"; sourceTree = "<group>"; };
+		CC770DF329691DDF004CEB59 /* Cucho Ornament.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cucho Ornament.otf"; sourceTree = "<group>"; };
+		CC770DF429691DDF004CEB59 /* iCiel Kermel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Kermel.ttf"; sourceTree = "<group>"; };
+		CC770DF529691DDF004CEB59 /* iCiel Altus Serif.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iCiel Altus Serif.otf"; sourceTree = "<group>"; };
+		CC770E24296925B7004CEB59 /* ExtensionUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUiView.swift; sourceTree = "<group>"; };
+		CC770E26296929F5004CEB59 /* luckycat2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = luckycat2.gif; sourceTree = "<group>"; };
+		CC8074C829693194003FD3CA /* ChooseCardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCardsCell.swift; sourceTree = "<group>"; };
+		CC8074C929693194003FD3CA /* ChooseCardsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseCardsCell.xib; sourceTree = "<group>"; };
+		CC8074CD29694233003FD3CA /* easy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = easy.json; sourceTree = "<group>"; };
+		CC8074CE29694233003FD3CA /* hard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hard.json; sourceTree = "<group>"; };
+		CC8074CF29694233003FD3CA /* medium.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = medium.json; sourceTree = "<group>"; };
+		CC8074D3296942C1003FD3CA /* nhau.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nhau.json; sourceTree = "<group>"; };
+		CC8074D5296942DC003FD3CA /* tet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tet.json; sourceTree = "<group>"; };
+		CC8074D7296972DC003FD3CA /* ContentPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPagerViewCell.swift; sourceTree = "<group>"; };
+		CC8074D8296972DC003FD3CA /* ContentPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentPagerViewCell.xib; sourceTree = "<group>"; };
+		CC9FD25D29697B2900EDB4EB /* ExtensionTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTimeInterval.swift; sourceTree = "<group>"; };
+		CC9FD25F29698DC700EDB4EB /* catcat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = catcat.gif; sourceTree = "<group>"; };
+		CC9FD262296990E200EDB4EB /* catpng.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = catpng.gif; sourceTree = "<group>"; };
+		CCE4D7B529692B8A00F99689 /* ShowInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInfoView.swift; sourceTree = "<group>"; };
+		CCE4D7B729692B9500F99689 /* ShowInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowInfoView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC770D6729690AA9004CEB59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA505DE3A5E310036148175A /* Pods_Cards_001.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81DCC677E8E61FE3E0E330DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				508F7259C1712CB67816A4AE /* Pods_Cards_001.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7A19C3FBFF2B7F2C3A9DA79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A6EC19883C82B857D06754F /* Pods-Cards_001.debug.xcconfig */,
+				307C968F5D16A9CA4E537337 /* Pods-Cards_001.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC770D6129690AA9004CEB59 = {
+			isa = PBXGroup;
+			children = (
+				CC770D6C29690AA9004CEB59 /* Cards_001 */,
+				CC770D6B29690AA9004CEB59 /* Products */,
+				B7A19C3FBFF2B7F2C3A9DA79 /* Pods */,
+				81DCC677E8E61FE3E0E330DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC770D6B29690AA9004CEB59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC770D6A29690AA9004CEB59 /* Cards_001.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC770D6C29690AA9004CEB59 /* Cards_001 */ = {
+			isa = PBXGroup;
+			children = (
+				CC8074CC2969416D003FD3CA /* JSON */,
+				CC770D8329690AEB004CEB59 /* App */,
+				CC770D8129690ADE004CEB59 /* API */,
+				CC770D8229690AE1004CEB59 /* Model */,
+				CC770D8429690AF7004CEB59 /* Modules */,
+				CC770E2829692AC9004CEB59 /* UIView */,
+				CC770D8529690B17004CEB59 /* Helpers */,
+				CC770D7629690AAC004CEB59 /* Assets.xcassets */,
+				CC770D7829690AAC004CEB59 /* LaunchScreen.storyboard */,
+				CC770D7B29690AAC004CEB59 /* Info.plist */,
+			);
+			path = Cards_001;
+			sourceTree = "<group>";
+		};
+		CC770D8129690ADE004CEB59 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CC770D8929690B71004CEB59 /* APIService.swift */,
+				CC770D9529690D38004CEB59 /* AudioService.swift */,
+				CC770D9729690D40004CEB59 /* Mp3Service.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CC770D8229690AE1004CEB59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC770D9929690E76004CEB59 /* GameCardResponse.swift */,
+				CC770D9B29690E91004CEB59 /* GameWordResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC770D8329690AEB004CEB59 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CC770D6D29690AA9004CEB59 /* AppDelegate.swift */,
+				CC770D6F29690AA9004CEB59 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CC770D8429690AF7004CEB59 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CC770D8629690B23004CEB59 /* Splash */,
+				CC770D9D29690EAE004CEB59 /* Home */,
+				CC770D9E29690EBE004CEB59 /* Theme */,
+				CC770D9F29690EC5004CEB59 /* SpinBottle */,
+				CC770DA029690ED4004CEB59 /* ChooseCards */,
+				CC770DA229690EFC004CEB59 /* QuizGame */,
+				CC770DA129690EF0004CEB59 /* LevelGame */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CC770D8529690B17004CEB59 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CC770DC729691DA8004CEB59 /* Fonts */,
+				CC770D8829690B51004CEB59 /* Extension */,
+				CC770D8729690B45004CEB59 /* LinkMp3 */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CC770D8629690B23004CEB59 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				CC770D7129690AA9004CEB59 /* ViewController.swift */,
+				CC770D7329690AA9004CEB59 /* Main.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		CC770D8729690B45004CEB59 /* LinkMp3 */ = {
+			isa = PBXGroup;
+			children = (
+				CC323B732969950800BF5DD5 /* blackcat.gif */,
+				CC9FD262296990E200EDB4EB /* catpng.gif */,
+				CC9FD25F29698DC700EDB4EB /* catcat.gif */,
+				CC770E26296929F5004CEB59 /* luckycat2.gif */,
+				CC770DA329691059004CEB59 /* luckycat.gif */,
+				CC323B752969A60C00BF5DD5 /* spin.mp3 */,
+				CC770D8B29690CAB004CEB59 /* quay_chai.mp3 */,
+				CC770D8D29690CC7004CEB59 /* alarm.mp3 */,
+				CC770D9029690D20004CEB59 /* CardFlip.mp3 */,
+				CC770D8F29690D20004CEB59 /* Click.mp3 */,
+				CC770D9329690D26004CEB59 /* intro.mp3 */,
+			);
+			path = LinkMp3;
+			sourceTree = "<group>";
+		};
+		CC770D8829690B51004CEB59 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CC770DA929691248004CEB59 /* ExtensionColor.swift */,
+				CC770DAB2969165A004CEB59 /* ExtensionUIImage.swift */,
+				CC770E24296925B7004CEB59 /* ExtensionUiView.swift */,
+				CC9FD25D29697B2900EDB4EB /* ExtensionTimeInterval.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CC770D9D29690EAE004CEB59 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CC770DA5296911D7004CEB59 /* HomeVC.swift */,
+				CC770DA6296911D7004CEB59 /* HomeVC.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CC770D9E29690EBE004CEB59 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				CC770DB1296918F5004CEB59 /* ThemeVC.swift */,
+				CC770DB2296918F5004CEB59 /* ThemeVC.xib */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		CC770D9F29690EC5004CEB59 /* SpinBottle */ = {
+			isa = PBXGroup;
+			children = (
+				CC770DB52969194F004CEB59 /* SpinBottleVC.swift */,
+				CC770DB62969194F004CEB59 /* SpinBottleVC.xib */,
+			);
+			path = SpinBottle;
+			sourceTree = "<group>";
+		};
+		CC770DA029690ED4004CEB59 /* ChooseCards */ = {
+			isa = PBXGroup;
+			children = (
+				CC770DB92969195D004CEB59 /* ChooseCardsVC.swift */,
+				CC770DBA2969195D004CEB59 /* ChooseCardsVC.xib */,
+				CC8074C829693194003FD3CA /* ChooseCardsCell.swift */,
+				CC8074C929693194003FD3CA /* ChooseCardsCell.xib */,
+			);
+			path = ChooseCards;
+			sourceTree = "<group>";
+		};
+		CC770DA129690EF0004CEB59 /* LevelGame */ = {
+			isa = PBXGroup;
+			children = (
+				CC770DC3296919D9004CEB59 /* LevelGameVC.swift */,
+				CC770DC4296919D9004CEB59 /* LevelGameVC.xib */,
+				CC8074D7296972DC003FD3CA /* ContentPagerViewCell.swift */,
+				CC8074D8296972DC003FD3CA /* ContentPagerViewCell.xib */,
+			);
+			path = LevelGame;
+			sourceTree = "<group>";
+		};
+		CC770DA229690EFC004CEB59 /* QuizGame */ = {
+			isa = PBXGroup;
+			children = (
+				CC770DBD2969196C004CEB59 /* QuizGameVC.swift */,
+				CC770DBE2969196C004CEB59 /* QuizGameVC.xib */,
+			);
+			path = QuizGame;
+			sourceTree = "<group>";
+		};
+		CC770DC729691DA8004CEB59 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CC770DF129691DDF004CEB59 /* BreeSerif.otf */,
+				CC770DDD29691DDE004CEB59 /* Cucho Bold.otf */,
+				CC770DF329691DDF004CEB59 /* Cucho Ornament.otf */,
+				CC770DC929691DDD004CEB59 /* Cucho.otf */,
+				CC770DD429691DDE004CEB59 /* ffonts.net.htm */,
+				CC770DE629691DDE004CEB59 /* ffonts.net.txt */,
+				CC770DD829691DDE004CEB59 /* Gotham-Medium.otf */,
+				CC770DD229691DDE004CEB59 /* Gotham-Thin.otf */,
+				CC770DD029691DDE004CEB59 /* Gotham-Ultra.otf */,
+				CC770DEC29691DDE004CEB59 /* iCiel Alina.otf */,
+				CC770DEB29691DDE004CEB59 /* iCiel Altus Extra.otf */,
+				CC770DED29691DDE004CEB59 /* iCiel Altus Extra.ttf */,
+				CC770DF529691DDF004CEB59 /* iCiel Altus Serif.otf */,
+				CC770DD129691DDE004CEB59 /* iCiel Altus Serif.ttf */,
+				CC770DE829691DDE004CEB59 /* iCiel Altus.otf */,
+				CC770DE029691DDE004CEB59 /* iCiel Altus.ttf */,
+				CC770DEF29691DDE004CEB59 /* iciel Cadena.ttf */,
+				CC770DDB29691DDE004CEB59 /* iCiel Crocante.otf */,
+				CC770DEE29691DDE004CEB59 /* iCiel Finch ornaments.otf */,
+				CC770DCD29691DDE004CEB59 /* iCiel Finch ornaments.ttf */,
+				CC770DD929691DDE004CEB59 /* iCiel Kermel.otf */,
+				CC770DF429691DDF004CEB59 /* iCiel Kermel.ttf */,
+				CC770DD629691DDE004CEB59 /* iCiel Pacifico.otf */,
+				CC770DC829691DDD004CEB59 /* iCiel Pacifico.ttf */,
+				CC770DE329691DDE004CEB59 /* iCiel Rukola.otf */,
+				CC770DCA29691DDE004CEB59 /* iCiel Rukola.ttf */,
+				CC770DDE29691DDE004CEB59 /* iCiel TALUHLA.otf */,
+				CC770DF029691DDF004CEB59 /* iCielAmerigraf.otf */,
+				CC770DCB29691DDE004CEB59 /* iCielAmerigraf.ttf */,
+				CC770DE229691DDE004CEB59 /* iCielBambola.otf */,
+				CC770DCE29691DDE004CEB59 /* iCielBambola.ttf */,
+				CC770DDC29691DDE004CEB59 /* iCielCadena.otf */,
+				CC770DDA29691DDE004CEB59 /* iCielParisSerif-Bold.otf */,
+				CC770DD729691DDE004CEB59 /* iCielParisSerif-Bold.ttf */,
+				CC770DDF29691DDE004CEB59 /* iCielSoupofJustice.otf */,
+				CC770DE929691DDE004CEB59 /* iCielSoupofJustice.ttf */,
+				CC770DF229691DDF004CEB59 /* install-a-new-font.txt */,
+				CC770DD329691DDE004CEB59 /* Mijas-Ultra.otf */,
+				CC770DE429691DDE004CEB59 /* Nabila.ttf */,
+				CC770DE129691DDE004CEB59 /* Pony.ttf */,
+				CC770DEA29691DDE004CEB59 /* quick_tips.html */,
+				CC770DCF29691DDE004CEB59 /* TALUHLA Borders.ttf */,
+				CC770DCC29691DDE004CEB59 /* UVF - Kizo.ttf */,
+				CC770DE729691DDE004CEB59 /* UVF LH Line1 Sans Thin.ttf */,
+				CC770DE529691DDE004CEB59 /* zitroneFY.otf */,
+				CC770DD529691DDE004CEB59 /* zitroneFY.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CC770E2829692AC9004CEB59 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4D7B529692B8A00F99689 /* ShowInfoView.swift */,
+				CCE4D7B729692B9500F99689 /* ShowInfoView.xib */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		CC8074CC2969416D003FD3CA /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				CC8074CD29694233003FD3CA /* easy.json */,
+				CC8074CF29694233003FD3CA /* medium.json */,
+				CC8074CE29694233003FD3CA /* hard.json */,
+				CC8074D3296942C1003FD3CA /* nhau.json */,
+				CC8074D5296942DC003FD3CA /* tet.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC770D6929690AA9004CEB59 /* Cards_001 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC770D7E29690AAC004CEB59 /* Build configuration list for PBXNativeTarget "Cards_001" */;
+			buildPhases = (
+				0F339F5A6B5A942978DF6E9D /* [CP] Check Pods Manifest.lock */,
+				CC770D6629690AA9004CEB59 /* Sources */,
+				CC770D6729690AA9004CEB59 /* Frameworks */,
+				CC770D6829690AA9004CEB59 /* Resources */,
+				06D488AC7E203B18887F1F22 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cards_001;
+			productName = Cards_001;
+			productReference = CC770D6A29690AA9004CEB59 /* Cards_001.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC770D6229690AA9004CEB59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CC770D6929690AA9004CEB59 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CC770D6529690AA9004CEB59 /* Build configuration list for PBXProject "Cards_001" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC770D6129690AA9004CEB59;
+			productRefGroup = CC770D6B29690AA9004CEB59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC770D6929690AA9004CEB59 /* Cards_001 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC770D6829690AA9004CEB59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC770E0A29691DDF004CEB59 /* iCielCadena.otf in Resources */,
+				CC770DA429691059004CEB59 /* luckycat.gif in Resources */,
+				CC770E1129691DDF004CEB59 /* iCiel Rukola.otf in Resources */,
+				CC770D7A29690AAC004CEB59 /* LaunchScreen.storyboard in Resources */,
+				CC770DFB29691DDF004CEB59 /* iCiel Finch ornaments.ttf in Resources */,
+				CC770DF929691DDF004CEB59 /* iCielAmerigraf.ttf in Resources */,
+				CC770E2229691DDF004CEB59 /* iCiel Kermel.ttf in Resources */,
+				CC8074D229694233003FD3CA /* medium.json in Resources */,
+				CC770DF629691DDF004CEB59 /* iCiel Pacifico.ttf in Resources */,
+				CC770DBC2969195D004CEB59 /* ChooseCardsVC.xib in Resources */,
+				CC323B762969A60C00BF5DD5 /* spin.mp3 in Resources */,
+				CC770D9229690D20004CEB59 /* CardFlip.mp3 in Resources */,
+				CC770E1A29691DDF004CEB59 /* iCiel Alina.otf in Resources */,
+				CC770D9129690D20004CEB59 /* Click.mp3 in Resources */,
+				CC770E1529691DDF004CEB59 /* UVF LH Line1 Sans Thin.ttf in Resources */,
+				CC770E0729691DDF004CEB59 /* iCiel Kermel.otf in Resources */,
+				CC770E0E29691DDF004CEB59 /* iCiel Altus.ttf in Resources */,
+				CC770E0129691DDF004CEB59 /* Mijas-Ultra.otf in Resources */,
+				CC770D9429690D26004CEB59 /* intro.mp3 in Resources */,
+				CC770E0B29691DDF004CEB59 /* Cucho Bold.otf in Resources */,
+				CC8074CB29693194003FD3CA /* ChooseCardsCell.xib in Resources */,
+				CC323B742969950900BF5DD5 /* blackcat.gif in Resources */,
+				CC770E1C29691DDF004CEB59 /* iCiel Finch ornaments.otf in Resources */,
+				CC8074D4296942C1003FD3CA /* nhau.json in Resources */,
+				CC770D7729690AAC004CEB59 /* Assets.xcassets in Resources */,
+				CC770E1929691DDF004CEB59 /* iCiel Altus Extra.otf in Resources */,
+				CC770E1029691DDF004CEB59 /* iCielBambola.otf in Resources */,
+				CC770E1329691DDF004CEB59 /* zitroneFY.otf in Resources */,
+				CC770DFC29691DDF004CEB59 /* iCielBambola.ttf in Resources */,
+				CC770E1829691DDF004CEB59 /* quick_tips.html in Resources */,
+				CC770D7529690AA9004CEB59 /* Main.storyboard in Resources */,
+				CC770E0529691DDF004CEB59 /* iCielParisSerif-Bold.ttf in Resources */,
+				CC770DFD29691DDF004CEB59 /* TALUHLA Borders.ttf in Resources */,
+				CC770DC6296919D9004CEB59 /* LevelGameVC.xib in Resources */,
+				CC770E0029691DDF004CEB59 /* Gotham-Thin.otf in Resources */,
+				CCE4D7B829692B9500F99689 /* ShowInfoView.xib in Resources */,
+				CC770DB4296918F5004CEB59 /* ThemeVC.xib in Resources */,
+				CC8074D6296942DC003FD3CA /* tet.json in Resources */,
+				CC770E0D29691DDF004CEB59 /* iCielSoupofJustice.otf in Resources */,
+				CC8074D129694233003FD3CA /* hard.json in Resources */,
+				CC770E1229691DDF004CEB59 /* Nabila.ttf in Resources */,
+				CC770E0829691DDF004CEB59 /* iCielParisSerif-Bold.otf in Resources */,
+				CC770DA8296911D7004CEB59 /* HomeVC.xib in Resources */,
+				CC770E1D29691DDF004CEB59 /* iciel Cadena.ttf in Resources */,
+				CC770E0329691DDF004CEB59 /* zitroneFY.ttf in Resources */,
+				CC9FD263296990E200EDB4EB /* catpng.gif in Resources */,
+				CC770DF829691DDF004CEB59 /* iCiel Rukola.ttf in Resources */,
+				CC770E0F29691DDF004CEB59 /* Pony.ttf in Resources */,
+				CC770D8C29690CAB004CEB59 /* quay_chai.mp3 in Resources */,
+				CC8074D029694233003FD3CA /* easy.json in Resources */,
+				CC9FD26029698DC700EDB4EB /* catcat.gif in Resources */,
+				CC770E0629691DDF004CEB59 /* Gotham-Medium.otf in Resources */,
+				CC770E0929691DDF004CEB59 /* iCiel Crocante.otf in Resources */,
+				CC770DF729691DDF004CEB59 /* Cucho.otf in Resources */,
+				CC770E2329691DDF004CEB59 /* iCiel Altus Serif.otf in Resources */,
+				CC770E1629691DDF004CEB59 /* iCiel Altus.otf in Resources */,
+				CC770E1729691DDF004CEB59 /* iCielSoupofJustice.ttf in Resources */,
+				CC770DB82969194F004CEB59 /* SpinBottleVC.xib in Resources */,
+				CC770E2129691DDF004CEB59 /* Cucho Ornament.otf in Resources */,
+				CC770E1E29691DDF004CEB59 /* iCielAmerigraf.otf in Resources */,
+				CC770E0229691DDF004CEB59 /* ffonts.net.htm in Resources */,
+				CC770DFE29691DDF004CEB59 /* Gotham-Ultra.otf in Resources */,
+				CC770DFA29691DDF004CEB59 /* UVF - Kizo.ttf in Resources */,
+				CC770D8E29690CC7004CEB59 /* alarm.mp3 in Resources */,
+				CC770E27296929F5004CEB59 /* luckycat2.gif in Resources */,
+				CC770E1429691DDF004CEB59 /* ffonts.net.txt in Resources */,
+				CC770E1B29691DDF004CEB59 /* iCiel Altus Extra.ttf in Resources */,
+				CC770DC02969196C004CEB59 /* QuizGameVC.xib in Resources */,
+				CC8074DA296972DC003FD3CA /* ContentPagerViewCell.xib in Resources */,
+				CC770E0C29691DDF004CEB59 /* iCiel TALUHLA.otf in Resources */,
+				CC770E2029691DDF004CEB59 /* install-a-new-font.txt in Resources */,
+				CC770E1F29691DDF004CEB59 /* BreeSerif.otf in Resources */,
+				CC770DFF29691DDF004CEB59 /* iCiel Altus Serif.ttf in Resources */,
+				CC770E0429691DDF004CEB59 /* iCiel Pacifico.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06D488AC7E203B18887F1F22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cards_001/Pods-Cards_001-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cards_001/Pods-Cards_001-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cards_001/Pods-Cards_001-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F339F5A6B5A942978DF6E9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cards_001-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC770D6629690AA9004CEB59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC770DB3296918F5004CEB59 /* ThemeVC.swift in Sources */,
+				CC770D9A29690E76004CEB59 /* GameCardResponse.swift in Sources */,
+				CC770D9629690D38004CEB59 /* AudioService.swift in Sources */,
+				CC770DBB2969195D004CEB59 /* ChooseCardsVC.swift in Sources */,
+				CC770D7229690AA9004CEB59 /* ViewController.swift in Sources */,
+				CC770DB72969194F004CEB59 /* SpinBottleVC.swift in Sources */,
+				CC8074D9296972DC003FD3CA /* ContentPagerViewCell.swift in Sources */,
+				CC770DA7296911D7004CEB59 /* HomeVC.swift in Sources */,
+				CC770DC5296919D9004CEB59 /* LevelGameVC.swift in Sources */,
+				CC770DBF2969196C004CEB59 /* QuizGameVC.swift in Sources */,
+				CC8074CA29693194003FD3CA /* ChooseCardsCell.swift in Sources */,
+				CC770D6E29690AA9004CEB59 /* AppDelegate.swift in Sources */,
+				CC770D8A29690B71004CEB59 /* APIService.swift in Sources */,
+				CC770D9829690D40004CEB59 /* Mp3Service.swift in Sources */,
+				CC770DAC2969165A004CEB59 /* ExtensionUIImage.swift in Sources */,
+				CC770D9C29690E91004CEB59 /* GameWordResponse.swift in Sources */,
+				CC770D7029690AA9004CEB59 /* SceneDelegate.swift in Sources */,
+				CC770DAA29691248004CEB59 /* ExtensionColor.swift in Sources */,
+				CC770E25296925B7004CEB59 /* ExtensionUiView.swift in Sources */,
+				CC9FD25E29697B2900EDB4EB /* ExtensionTimeInterval.swift in Sources */,
+				CCE4D7B629692B8A00F99689 /* ShowInfoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC770D7329690AA9004CEB59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC770D7429690AA9004CEB59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC770D7829690AAC004CEB59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC770D7929690AAC004CEB59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC770D7C29690AAC004CEB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC770D7D29690AAC004CEB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC770D7F29690AAC004CEB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A6EC19883C82B857D06754F /* Pods-Cards_001.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD39G9W3UR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cards_001/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TUAN-ANH.Cards-001";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC770D8029690AAC004CEB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 307C968F5D16A9CA4E537337 /* Pods-Cards_001.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD39G9W3UR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cards_001/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TUAN-ANH.Cards-001";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC770D6529690AA9004CEB59 /* Build configuration list for PBXProject "Cards_001" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC770D7C29690AAC004CEB59 /* Debug */,
+				CC770D7D29690AAC004CEB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC770D7E29690AAC004CEB59 /* Build configuration list for PBXNativeTarget "Cards_001" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC770D7F29690AAC004CEB59 /* Debug */,
+				CC770D8029690AAC004CEB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC770D6229690AA9004CEB59 /* Project object */;
+}

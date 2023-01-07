@@ -1,0 +1,156 @@
+{
+    "easy": [
+        {
+            "stt": 1,
+            "cau": "Áo dài",
+            "image": "https://png.pngtree.com/png-clipart/20210301/ourmid/pngtree-cute-yellow-long-haired-girl-in-vietnamese-spring-festival-png-image_2980672.jpg"
+        },
+        {
+            "stt": 2,
+            "cau": "Bánh chưng",
+            "image": "https://www.btaskee.com/wp-content/uploads/2020/12/nguyen-lieu-goi-banh-chung.jpg"
+        },
+        {
+            "stt": 3,
+            "cau": "Lì xì",
+            "image": "https://simg.zalopay.com.vn/zlp-website/assets/li_xi_tet_4_63495d69d0.jpg"
+        },
+        {
+            "stt": 4,
+            "cau": "Thư pháp",
+            "image": "https://drive.google.com/file/d/15tVXAfyoW0EkCGggpiYSVWtzgH5znvtp/view?usp=share_link"
+        },
+        {
+            "stt": 5,
+            "cau": "Múa lân",
+            "image": "https://drive.google.com/file/d/1baZNjucNzfT1Ij989Ms0BEtSr6nvOtnP/view?usp=share_link"
+        },
+        {
+            "stt": 6,
+            "cau": "Mứt Tết",
+            "image": "https://drive.google.com/file/d/1kRn4pKtvIgNj9jnbchmjSnT3YPnC_HQP/view?usp=share_link"
+        },
+        {
+            "stt": 7,
+            "cau": "Pháo hoa",
+            "image": "https://img.meta.com.vn/Data/image/2022/01/26/anh-phao-hoa-3.gif"
+        },
+        {
+            "stt": 8,
+            "cau": "Hoa đào",
+            "image": "https://i.pinimg.com/originals/be/96/b7/be96b79656564ba92ed76b1077593ad9.gif"
+        },
+        {
+            "stt": 9,
+            "cau": "Rượu nếp",
+            "image": "https://dothothonghong.com/media/data/27-cau-doi-hay-cho-ngay-tet_1484192459_1.jpg"
+        },
+        {
+            "stt": 10,
+            "cau": "Câu đối",
+            "image": "https://www.btaskee.com/wp-content/uploads/2020/12/nguyen-lieu-goi-banh-chung.jpg"
+        },
+        {
+            "stt": 11,
+            "cau": "Cây nêu",
+            "image": "https://vothisaucamau.edu.vn/wp-content/uploads/2023/01/1672513396_427_Cay-neu-ngay-Tet-la-cay-gi-Su-tich-y.jpg"
+        },
+        {
+            "stt": 12,
+            "cau": "Giao thừa",
+            "image": "https://cdn.tgdd.vn/Files/2020/01/15/1231575/nhung-hoat-dong-y-nghia-nhat-voi-nguoi-than-ban-be-trong-dem-giao-thua-1.jpg"
+        },
+        {
+            "stt": 13,
+            "cau": "Countdown",
+            "image": "https://media1.giphy.com/media/RiEW6mSQqjRiDy51MI/giphy.gif"
+        },
+        {
+            "stt": 14,
+            "cau": "Hóa vàng",
+            "image": "https://media.baodautu.vn/Images/chicuong/2019/02/06/1.jpg"
+        },
+        {
+            "stt": 15,
+            "cau": "Cá chép",
+            "image": "https://i2.wp.com/media.giphy.com/media/l1J9L9Y81emaoNMoU/giphy.gif"
+        },
+        {
+            "stt": 16,
+            "cau": "Bánh chưng bánh dày",
+            "image": "https://th.bing.com/th/id/OIP.NxFCV4tdJBtTrIMu9hrdgAHaFG?pid=ImgDet&rs=1"
+        },
+        {
+            "stt": 17,
+            "cau": "Vạn sự như ý",
+            "image": "https://cf.shopee.vn/file/80ee3299ead71902a86df267134e3782"
+        },
+        {
+            "stt": 18,
+            "cau": "Lá dong",
+            "image": "https://cf.shopee.vn/file/877f8f6525bcda3d42383db6c0dc0e96"
+        },
+        {
+            "stt": 19,
+            "cau": "Tháng Chạp",
+            "image": "https://danviet.mediacdn.vn/296231569849192448/2022/1/13/du-lich-ha-noi-dip-tet-am-164205506507757875401.jpg"
+        },
+        {
+            "stt": 20,
+            "cau": "Con mèo",
+            "image": "https://cdn.dribbble.com/users/5669337/screenshots/14009793/media/30e82dd4f5626812aebbdc322e19750a.gif"
+        },
+        {
+            "stt": 21,
+            "cau": "Ông Công, Ông Táo",
+            "image": "https://ruochau.com/wp-content/uploads/2022/01/cung-ong-cong-ong-tao-can-nhung-gi-khan-sao-cho-dung.png"
+        },
+        {
+            "stt": 22,
+            "cau": "Chim én",
+            "image": "https://img.lovepik.com/free-png/20211124/lovepik-swallow-in-spring-png-image_401098151_wh1200.png"
+        },
+        {
+            "stt": 23,
+            "cau": "Hoa mai",
+            "image": "https://file1.dangcongsan.vn/data/0/images/2020/01/20/cuongpv/sac-mai-phuong-nam-3.jpg"
+        },
+        {
+            "stt": 24,
+            "cau": "Mâm ngũ quả",
+            "image": "https://cdn3.dhht.vn/wp-content/uploads/2021/12/thumnail-mam-ngu-qua-gom-qua-nao-cach-sap-xep-chuan-theo-vung-mien.jpg"
+        },
+        {
+            "stt": 25,
+            "cau": "Nem rán",
+            "image": "https://images.sieuthitaigia.vn/anh-seo-tin-tuc/2020/12/21/nem-ran-bao-nhieu-calo-2.jpg"
+        },
+        {
+            "stt": 26,
+            "cau": "Thắp hương",
+            "image": "https://png.pngtree.com/png-clipart/20210205/ourmid/pngtree-golden-incense-burner-png-image_2873303.jpg"
+        },
+        {
+            "stt": 27,
+            "cau": "Vui như Tết",
+            "image": "https://media.tenor.com/vYfha0XvHfgAAAAC/c%C6%B0%E1%BB%9Di-nh%C6%B0%C4%91i%C3%AAn-vui-qu%C3%A1.gif"
+        },
+        {
+            "stt": 28,
+            "cau": "30 chưa phải Tết",
+            "image": "https://kenh14cdn.com/thumb_w/600/2018/2/15/photo1518661967426-15186619674272005721320.gif"
+        },
+        {
+            "stt": 29,
+            "cau": "Dọn nhà",
+            "image": "https://phoneky.co.uk/thumbs/screensavers/down/misc/clean_wlmvt439.gif"
+        },
+        {
+            "stt": 30,
+            "cau": "Thở không ra hơi",
+            "image": "https://suckhoehangngay.mediacdn.vn/2019/4/6/anh-1-1478915525142-1478927451203-crop-1478927476686-15545443760562101426956.gif"
+        }
+    ]
+}
+
+

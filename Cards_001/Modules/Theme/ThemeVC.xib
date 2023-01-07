@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThemeVC" customModule="Cards_001" customModuleProvider="target">
+            <connections>
+                <outlet property="boderBtLeft" destination="IKE-cn-kfg" id="lHx-7R-uvv"/>
+                <outlet property="boderBtRight" destination="XSL-FI-yJs" id="6Bo-ML-0B3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="CAe-50-Zuw">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQt-Mh-EZN">
+                    <rect key="frame" x="20" y="76" width="24" height="24"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="arrow 2"/>
+                    <connections>
+                        <action selector="PopButton:" destination="-1" eventType="touchUpInside" id="N8l-Fb-3KM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKE-cn-kfg">
+                    <rect key="frame" x="24" y="306" width="166" height="284"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="166" id="PUm-vy-ha0"/>
+                        <constraint firstAttribute="height" constant="284" id="i3t-y4-f5g"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="Group 7226"/>
+                    <connections>
+                        <action selector="chuenhChoangbtn:" destination="-1" eventType="touchUpInside" id="tVF-w3-wur"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSL-FI-yJs">
+                    <rect key="frame" x="224" y="306" width="166" height="284"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="166" id="C1H-md-pQ9"/>
+                        <constraint firstAttribute="height" constant="284" id="CGM-J0-Bm6"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="Group 7227"/>
+                    <connections>
+                        <action selector="tetbtn:" destination="-1" eventType="touchUpInside" id="jID-Sc-Bew"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chuếnh choáng" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxX-Ka-sL0">
+                    <rect key="frame" x="37" y="330" width="140" height="63.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="vUf-Cb-u1I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tết yêu thương" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C7-ES-WaP">
+                    <rect key="frame" x="237" y="330" width="140" height="63.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="hfS-vv-c3g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CAe-50-Zuw" secondAttribute="bottom" id="6hR-iW-OBg"/>
+                <constraint firstItem="DQt-Mh-EZN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="BuP-fo-aHQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CAe-50-Zuw" secondAttribute="trailing" id="CTB-67-hFT"/>
+                <constraint firstItem="HxX-Ka-sL0" firstAttribute="top" secondItem="IKE-cn-kfg" secondAttribute="top" constant="24" id="DQ6-KX-Gdf"/>
+                <constraint firstItem="2C7-ES-WaP" firstAttribute="centerX" secondItem="XSL-FI-yJs" secondAttribute="centerX" id="E8m-2G-jBM"/>
+                <constraint firstItem="DQt-Mh-EZN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="E9j-Au-564"/>
+                <constraint firstItem="XSL-FI-yJs" firstAttribute="centerY" secondItem="CAe-50-Zuw" secondAttribute="centerY" id="IZ5-jE-klm"/>
+                <constraint firstItem="2C7-ES-WaP" firstAttribute="top" secondItem="HxX-Ka-sL0" secondAttribute="top" id="Lrm-ot-Dhf"/>
+                <constraint firstItem="CAe-50-Zuw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="P3V-5a-TdA"/>
+                <constraint firstItem="CAe-50-Zuw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QkN-Ds-QWo"/>
+                <constraint firstItem="HxX-Ka-sL0" firstAttribute="centerX" secondItem="IKE-cn-kfg" secondAttribute="centerX" id="TOW-38-wI7"/>
+                <constraint firstItem="IKE-cn-kfg" firstAttribute="centerY" secondItem="CAe-50-Zuw" secondAttribute="centerY" id="g1x-r5-AUR"/>
+                <constraint firstItem="XSL-FI-yJs" firstAttribute="centerX" secondItem="CAe-50-Zuw" secondAttribute="centerX" constant="100" id="lwv-aP-f1Y"/>
+                <constraint firstItem="IKE-cn-kfg" firstAttribute="centerX" secondItem="CAe-50-Zuw" secondAttribute="centerX" constant="-100" id="nBj-CV-XVk"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 7226" width="166" height="283.5"/>
+        <image name="Group 7227" width="166" height="283.5"/>
+        <image name="Home" width="390" height="844"/>
+        <image name="arrow 2" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

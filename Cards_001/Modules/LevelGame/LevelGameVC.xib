@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LevelGameVC" customModule="Cards_001" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="tH7-zQ-007" id="yhD-ei-k7v"/>
+                <outlet property="continueButton" destination="9Um-Rj-oTj" id="3O2-aL-4m6"/>
+                <outlet property="doneButton" destination="fwh-sH-PzT" id="9FQ-PJ-1eV"/>
+                <outlet property="startButton" destination="MGl-hT-ktd" id="wAE-i6-yeO"/>
+                <outlet property="stopButton" destination="1uL-pb-PHy" id="hee-vq-wFj"/>
+                <outlet property="timerLb" destination="qm6-L7-6Y4" id="2Au-PE-Jnm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7228" translatesAutoresizingMaskIntoConstraints="NO" id="5jd-5a-NBW">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwh-sH-PzT">
+                    <rect key="frame" x="213.5" y="639" width="159" height="67"/>
+                    <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="N8K-GI-0yP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="26"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Xong">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygS-ki-QRg">
+                    <rect key="frame" x="20" y="76" width="24" height="24"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="arrow 2"/>
+                    <connections>
+                        <action selector="popUpBt:" destination="-1" eventType="touchUpInside" id="f82-Jk-Z0b"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tH7-zQ-007" customClass="FSPagerView" customModule="FSPagerView">
+                    <rect key="frame" x="41.5" y="118" width="331" height="414"/>
+                    <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="tH7-zQ-007" secondAttribute="height" multiplier="0.8" id="yAD-vq-ied"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGl-hT-ktd">
+                    <rect key="frame" x="41.5" y="558" width="331" height="65"/>
+                    <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="rtu-PF-8Pp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="26"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Bắt Đầu">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm6-L7-6Y4">
+                    <rect key="frame" x="41.5" y="558" width="331" height="65"/>
+                    <color key="backgroundColor" red="0.94901961089999998" green="0.79215681550000006" blue="0.58039218189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="26"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uL-pb-PHy">
+                    <rect key="frame" x="41.5" y="639" width="159" height="65"/>
+                    <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="Y0M-Xy-yZF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="26"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Dừng">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Um-Rj-oTj">
+                    <rect key="frame" x="41.5" y="639" width="331" height="65"/>
+                    <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="7hZ-se-Q4C"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="26"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Từ Tiếp Theo">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ygS-ki-QRg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="0tA-4O-N7x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5jd-5a-NBW" secondAttribute="trailing" id="4M4-3R-NP7"/>
+                <constraint firstItem="fwh-sH-PzT" firstAttribute="top" secondItem="MGl-hT-ktd" secondAttribute="bottom" constant="16" id="8JG-Ft-Fxb"/>
+                <constraint firstItem="5jd-5a-NBW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8hs-bs-SaK"/>
+                <constraint firstItem="1uL-pb-PHy" firstAttribute="leading" secondItem="qm6-L7-6Y4" secondAttribute="leading" id="EJY-EN-tkU"/>
+                <constraint firstItem="qm6-L7-6Y4" firstAttribute="leading" secondItem="MGl-hT-ktd" secondAttribute="leading" id="Fbu-wh-vnb"/>
+                <constraint firstItem="1uL-pb-PHy" firstAttribute="width" secondItem="qm6-L7-6Y4" secondAttribute="width" multiplier="0.48" id="FdN-l6-vd8"/>
+                <constraint firstItem="tH7-zQ-007" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="74" id="HC5-dL-Yvl"/>
+                <constraint firstItem="MGl-hT-ktd" firstAttribute="top" secondItem="tH7-zQ-007" secondAttribute="bottom" constant="26" id="IW2-n7-X0T"/>
+                <constraint firstItem="9Um-Rj-oTj" firstAttribute="trailing" secondItem="qm6-L7-6Y4" secondAttribute="trailing" id="Kek-PR-xWd"/>
+                <constraint firstItem="ygS-ki-QRg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="V5w-Mc-pkN"/>
+                <constraint firstItem="qm6-L7-6Y4" firstAttribute="bottom" secondItem="MGl-hT-ktd" secondAttribute="bottom" id="daG-a8-kVq"/>
+                <constraint firstItem="tH7-zQ-007" firstAttribute="width" secondItem="5jd-5a-NBW" secondAttribute="width" multiplier="0.8" id="hHY-E5-9Xt"/>
+                <constraint firstItem="9Um-Rj-oTj" firstAttribute="top" secondItem="MGl-hT-ktd" secondAttribute="bottom" constant="16" id="jR8-MO-5nn"/>
+                <constraint firstItem="9Um-Rj-oTj" firstAttribute="leading" secondItem="qm6-L7-6Y4" secondAttribute="leading" id="jWi-kz-PLx"/>
+                <constraint firstItem="tH7-zQ-007" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k90-Xp-FUV"/>
+                <constraint firstItem="qm6-L7-6Y4" firstAttribute="top" secondItem="MGl-hT-ktd" secondAttribute="top" id="l8f-KQ-zis"/>
+                <constraint firstItem="fwh-sH-PzT" firstAttribute="trailing" secondItem="qm6-L7-6Y4" secondAttribute="trailing" id="lZ1-KZ-l1K"/>
+                <constraint firstItem="qm6-L7-6Y4" firstAttribute="trailing" secondItem="MGl-hT-ktd" secondAttribute="trailing" id="mgR-vW-B0L"/>
+                <constraint firstItem="fwh-sH-PzT" firstAttribute="width" secondItem="qm6-L7-6Y4" secondAttribute="width" multiplier="0.48" id="njn-j4-eE3"/>
+                <constraint firstItem="MGl-hT-ktd" firstAttribute="leading" secondItem="tH7-zQ-007" secondAttribute="leading" id="tNx-gW-dBg"/>
+                <constraint firstAttribute="bottom" secondItem="5jd-5a-NBW" secondAttribute="bottom" id="udD-o6-hEe"/>
+                <constraint firstItem="MGl-hT-ktd" firstAttribute="trailing" secondItem="tH7-zQ-007" secondAttribute="trailing" id="vTA-e7-8FH"/>
+                <constraint firstItem="5jd-5a-NBW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zP5-7u-t8D"/>
+                <constraint firstItem="1uL-pb-PHy" firstAttribute="top" secondItem="MGl-hT-ktd" secondAttribute="bottom" constant="16" id="zW5-0E-IDa"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="56.919642857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 7228" width="390" height="844"/>
+        <image name="arrow 2" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
