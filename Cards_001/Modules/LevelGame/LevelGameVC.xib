@@ -25,18 +25,18 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7228" translatesAutoresizingMaskIntoConstraints="NO" id="5jd-5a-NBW">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7252" translatesAutoresizingMaskIntoConstraints="NO" id="5jd-5a-NBW">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwh-sH-PzT">
-                    <rect key="frame" x="213.5" y="639" width="159" height="67"/>
-                    <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwh-sH-PzT">
+                    <rect key="frame" x="223.5" y="675" width="149" height="65"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="67" id="N8K-GI-0yP"/>
+                        <constraint firstAttribute="height" constant="65" id="N8K-GI-0yP"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="26"/>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="25"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Xong">
+                    <state key="normal" title="Xong" backgroundImage="Frame 7259-2">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
@@ -49,52 +49,52 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tH7-zQ-007" customClass="FSPagerView" customModule="FSPagerView">
-                    <rect key="frame" x="41.5" y="118" width="331" height="414"/>
+                    <rect key="frame" x="41.5" y="154" width="331" height="414"/>
                     <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="tH7-zQ-007" secondAttribute="height" multiplier="0.8" id="yAD-vq-ied"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGl-hT-ktd">
-                    <rect key="frame" x="41.5" y="558" width="331" height="65"/>
-                    <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <rect key="frame" x="41.5" y="594" width="331" height="65"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="65" id="rtu-PF-8Pp"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="26"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Bắt Đầu">
+                    <state key="normal" title="Bắt đầu" backgroundImage="Group 7250-1">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm6-L7-6Y4">
-                    <rect key="frame" x="41.5" y="558" width="331" height="65"/>
+                    <rect key="frame" x="41.5" y="594" width="331" height="65"/>
                     <color key="backgroundColor" red="0.94901961089999998" green="0.79215681550000006" blue="0.58039218189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="26"/>
                     <color key="textColor" systemColor="systemRedColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uL-pb-PHy">
-                    <rect key="frame" x="41.5" y="639" width="159" height="65"/>
-                    <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <rect key="frame" x="41.5" y="675" width="149" height="65"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="65" id="Y0M-Xy-yZF"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="26"/>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="25"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Dừng">
+                    <state key="normal" title="Dừng" backgroundImage="Frame 7259-2">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Um-Rj-oTj">
-                    <rect key="frame" x="41.5" y="639" width="331" height="65"/>
-                    <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <rect key="frame" x="41.5" y="675" width="331" height="65"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="65" id="7hZ-se-Q4C"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="26"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Từ Tiếp Theo">
+                    <state key="normal" title="Từ tiếp theo" backgroundImage="Group 7250-1">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
@@ -108,20 +108,20 @@
                 <constraint firstItem="5jd-5a-NBW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8hs-bs-SaK"/>
                 <constraint firstItem="1uL-pb-PHy" firstAttribute="leading" secondItem="qm6-L7-6Y4" secondAttribute="leading" id="EJY-EN-tkU"/>
                 <constraint firstItem="qm6-L7-6Y4" firstAttribute="leading" secondItem="MGl-hT-ktd" secondAttribute="leading" id="Fbu-wh-vnb"/>
-                <constraint firstItem="1uL-pb-PHy" firstAttribute="width" secondItem="qm6-L7-6Y4" secondAttribute="width" multiplier="0.48" id="FdN-l6-vd8"/>
-                <constraint firstItem="tH7-zQ-007" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="74" id="HC5-dL-Yvl"/>
+                <constraint firstItem="1uL-pb-PHy" firstAttribute="width" secondItem="qm6-L7-6Y4" secondAttribute="width" multiplier="0.45" id="FdN-l6-vd8"/>
+                <constraint firstItem="tH7-zQ-007" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="110" id="HC5-dL-Yvl"/>
                 <constraint firstItem="MGl-hT-ktd" firstAttribute="top" secondItem="tH7-zQ-007" secondAttribute="bottom" constant="26" id="IW2-n7-X0T"/>
                 <constraint firstItem="9Um-Rj-oTj" firstAttribute="trailing" secondItem="qm6-L7-6Y4" secondAttribute="trailing" id="Kek-PR-xWd"/>
                 <constraint firstItem="ygS-ki-QRg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="V5w-Mc-pkN"/>
+                <constraint firstItem="fwh-sH-PzT" firstAttribute="trailing" secondItem="tH7-zQ-007" secondAttribute="trailing" id="X6s-hg-M66"/>
                 <constraint firstItem="qm6-L7-6Y4" firstAttribute="bottom" secondItem="MGl-hT-ktd" secondAttribute="bottom" id="daG-a8-kVq"/>
                 <constraint firstItem="tH7-zQ-007" firstAttribute="width" secondItem="5jd-5a-NBW" secondAttribute="width" multiplier="0.8" id="hHY-E5-9Xt"/>
                 <constraint firstItem="9Um-Rj-oTj" firstAttribute="top" secondItem="MGl-hT-ktd" secondAttribute="bottom" constant="16" id="jR8-MO-5nn"/>
                 <constraint firstItem="9Um-Rj-oTj" firstAttribute="leading" secondItem="qm6-L7-6Y4" secondAttribute="leading" id="jWi-kz-PLx"/>
                 <constraint firstItem="tH7-zQ-007" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k90-Xp-FUV"/>
                 <constraint firstItem="qm6-L7-6Y4" firstAttribute="top" secondItem="MGl-hT-ktd" secondAttribute="top" id="l8f-KQ-zis"/>
-                <constraint firstItem="fwh-sH-PzT" firstAttribute="trailing" secondItem="qm6-L7-6Y4" secondAttribute="trailing" id="lZ1-KZ-l1K"/>
                 <constraint firstItem="qm6-L7-6Y4" firstAttribute="trailing" secondItem="MGl-hT-ktd" secondAttribute="trailing" id="mgR-vW-B0L"/>
-                <constraint firstItem="fwh-sH-PzT" firstAttribute="width" secondItem="qm6-L7-6Y4" secondAttribute="width" multiplier="0.48" id="njn-j4-eE3"/>
+                <constraint firstItem="fwh-sH-PzT" firstAttribute="width" secondItem="qm6-L7-6Y4" secondAttribute="width" multiplier="0.45" id="njn-j4-eE3"/>
                 <constraint firstItem="MGl-hT-ktd" firstAttribute="leading" secondItem="tH7-zQ-007" secondAttribute="leading" id="tNx-gW-dBg"/>
                 <constraint firstAttribute="bottom" secondItem="5jd-5a-NBW" secondAttribute="bottom" id="udD-o6-hEe"/>
                 <constraint firstItem="MGl-hT-ktd" firstAttribute="trailing" secondItem="tH7-zQ-007" secondAttribute="trailing" id="vTA-e7-8FH"/>
@@ -132,7 +132,9 @@
         </view>
     </objects>
     <resources>
-        <image name="Group 7228" width="390" height="844"/>
+        <image name="Frame 7259-2" width="150" height="75"/>
+        <image name="Group 7250-1" width="318" height="75"/>
+        <image name="Group 7252" width="390" height="844"/>
         <image name="arrow 2" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

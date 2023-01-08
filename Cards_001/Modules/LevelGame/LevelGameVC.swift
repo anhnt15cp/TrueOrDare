@@ -60,6 +60,7 @@ class LevelGameVC: UIViewController {
             contentView.layer.masksToBounds = true
             contentView.dataSource = self
             contentView.delegate = self
+            contentView.isInfinite = true
             contentView.register(UINib(nibName: "ContentPagerViewCell", bundle: nil), forCellWithReuseIdentifier: "ContentPagerViewCell")
             contentView.transformer = FSPagerViewTransformer(type: .crossFading)
             contentView.itemSize = CGSize(width: self.contentView.frame.width, height: self.contentView.frame.height)
@@ -74,18 +75,16 @@ class LevelGameVC: UIViewController {
     var isCheckGameType: IsCheckGameType = .easy
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         checkType()
     }
     
     @objc func tapToContinueButton() {
-        switch isCheckGameType {
-        case .easy:
-            timeLeft = 30
-        case .medium:
-            timeLeft = 60
-        case .hard:
-            timeLeft = 120
-        }
+        self.checkType()
         self.timerLb.text = timeLeft.time
         self.continueButton.isHidden = true
         self.startButton.isHidden = false
@@ -112,39 +111,47 @@ class LevelGameVC: UIViewController {
     @objc func tapToStopButton() {
         self.timer.invalidate()
         if self.stopButton.titleLabel?.text == "Dừng" {
+            Mp3Service.shared.stopAudio()
             self.stopButton.setTitle("Tiếp Tục", for: .normal)
-        }else {
+        } else {
+            Mp3Service.shared.startAudio()
             self.stopButton.setTitle("Dừng", for: .normal)
             self.setUpTimer()
         }
-        }
+    }
     
     @objc func tapToStartButton() {
         self.stopButton.setTitle("Dừng", for: .normal)
         self.setUpIsHidenFalse()
         self.setUpTimer()
-        self.startButton.isUserInteractionEnabled = false
-        contentView.isUserInteractionEnabled = false
+        Mp3Service.shared.startAudio()
     }
 
     private func setUpIsHidenFalse() {
         self.timerLb.isHidden = false
         self.stopButton.isHidden = false
         self.doneButton.isHidden = false
+        self.startButton.isUserInteractionEnabled = false
+        contentView.isUserInteractionEnabled = false
     }
     
     private func checkType() {
+        
         switch isCheckGameType {
         case .easy:
             self.dataGameEasy()
             timeLeft = 30
+            Mp3Service.shared.setupAudio(linkPath: "level1-2.mp3")
         case .medium:
             self.dataGameMedium()
+            Mp3Service.shared.setupAudio(linkPath: "level_2.mp3")
             timeLeft = 60
         case .hard:
             self.dataGameHard()
+            Mp3Service.shared.setupAudio(linkPath: "level3-2.mp3")
             timeLeft = 120
         }
+        Mp3Service.shared.stopAudio()
         timerLb.text = timeLeft.time
     }
     
@@ -172,6 +179,7 @@ class LevelGameVC: UIViewController {
     
     @IBAction func popUpBt(_ sender: Any) {
         timer.invalidate()
+        Mp3Service.shared.stopAudio()
         self.navigationController?.popViewController(animated: true)
     }
     

@@ -11,7 +11,7 @@ class ShowInfoView: UIView {
     
     @IBOutlet weak var catcat: UIImageView! {
         didSet {
-            let gif = UIImage.gifImageWithName("blackcat")
+            let gif = UIImage.gifImageWithName("cat2")
             catcat.image = gif
         }
     }
@@ -50,10 +50,12 @@ class ShowInfoView: UIView {
 
     @IBAction func leftButton(_ sender: UIButton) {
         self.handleFilipAgain?()
+        AudioService.shared.stopMusic()
         self.removeFromSuperview()
     }
     
     @IBAction func rightButton(_ sender: UIButton) {
+        AudioService.shared.stopMusic()
         self.handlePop?()
     }
     

@@ -17,7 +17,9 @@ class ChooseCardsVC: UIViewController {
         }
     }
     
+    var handleIshidenBt: (()->Void)?
     var checkType: Bool = true
+    
     private var listItemDrink: [ListItemNhau] = []
     private var listItemNewYear: [ListItemTet] = []
     private let showInfoView: ShowInfoView = .instanceFromNib()
@@ -45,40 +47,15 @@ class ChooseCardsVC: UIViewController {
     private func setUpShowInfoView() {
         showInfoView.handlePop = {
             self.navigationController?.popViewController(animated: true)
+            self.handleIshidenBt?()
         }
         self.showInfoView.frame = self.view.frame
         self.showInfoView.zoomOut()
         self.view.addSubview(showInfoView)
     }
     
-    private func dataDrink() {
-        APIService.shared.getDataDrink { listItem in
-            guard let listItem = listItem else {
-                return
-            }
-            self.listItemDrink.append(contentsOf: listItem)
-            self.listItemDrink = self.listItemDrink.shuffled()
-            DispatchQueue.main.async {
-                self.collectionView.reloadData()
-            }
-        }
-    }
-    
-    private func dataNewYear() {
-        APIService.shared.getDataNewYear { listItem in
-            guard let listItem = listItem else {
-                return
-            }
-            self.listItemNewYear.append(contentsOf: listItem)
-            self.listItemNewYear = self.listItemNewYear.shuffled()
-            DispatchQueue.main.async {
-                self.collectionView.reloadData()
-            }
-        }
-    }
-    
-    
     @IBAction func popButton(_ sender: Any) {
+        self.handleIshidenBt?()
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -154,5 +131,35 @@ extension ChooseCardsVC: UICollectionViewDelegateFlowLayout {
         return 24
     }
     
+    
+}
+
+extension ChooseCardsVC {
+    
+    private func dataDrink() {
+        APIService.shared.getDataDrink { listItem in
+            guard let listItem = listItem else {
+                return
+            }
+            self.listItemDrink.append(contentsOf: listItem)
+            self.listItemDrink = self.listItemDrink.shuffled()
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
+    }
+    
+    private func dataNewYear() {
+        APIService.shared.getDataNewYear { listItem in
+            guard let listItem = listItem else {
+                return
+            }
+            self.listItemNewYear.append(contentsOf: listItem)
+            self.listItemNewYear = self.listItemNewYear.shuffled()
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
+    }
     
 }

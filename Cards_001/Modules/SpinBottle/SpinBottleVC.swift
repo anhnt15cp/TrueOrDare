@@ -13,6 +13,7 @@ enum IsSelectedType {
 }
 
 class SpinBottleVC: UIViewController {
+    @IBOutlet weak var backbtn: UIButton!
     @IBOutlet weak var imageBottle: UIImageView! {
         didSet {
             imageBottle.isUserInteractionEnabled = true
@@ -57,15 +58,18 @@ class SpinBottleVC: UIViewController {
     }
     
     @IBAction func rightButton(_ sender: Any) {
+        let vc = ChooseCardsVC()
+        vc.handleIshidenBt = {
+                      self.leftButton.isHidden = true
+                      self.rightButton.isHidden = true
+                      self.imageBottle.isUserInteractionEnabled = true
+                  }
+        self.navigationController?.pushViewController(vc, animated: true)
         switch isSelectedType {
         case .Drink:
-            let vc = ChooseCardsVC()
             vc.checkType = true
-            self.navigationController?.pushViewController(vc, animated: true)
         case .Newyear:
-            let vc = ChooseCardsVC()
             vc.checkType = false
-            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     
@@ -80,17 +84,19 @@ extension SpinBottleVC {
     @objc func tapToImageBottle() {
         setSpinBottel()
         self.textLabel.isHidden = true
+        self.backbtn.isUserInteractionEnabled = false
         Mp3Service.shared.setupAudio(linkPath: "quay_chai.mp3")
         DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
             self.imageBottle.stopRotation()
             self.setIsHiddenFalse()
-            self.imageBottle.isUserInteractionEnabled = false
+            self.backbtn.isUserInteractionEnabled = true
         }
     }
     
     func setIsHiddenFalse() {
         self.leftButton.isHidden = false
         self.rightButton.isHidden = false
+        self.imageBottle.isUserInteractionEnabled = false
     }
     
 }

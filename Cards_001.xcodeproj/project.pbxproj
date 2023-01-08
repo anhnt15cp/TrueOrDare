@@ -98,6 +98,10 @@
 		CC8074D6296942DC003FD3CA /* tet.json in Resources */ = {isa = PBXBuildFile; fileRef = CC8074D5296942DC003FD3CA /* tet.json */; };
 		CC8074D9296972DC003FD3CA /* ContentPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8074D7296972DC003FD3CA /* ContentPagerViewCell.swift */; };
 		CC8074DA296972DC003FD3CA /* ContentPagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC8074D8296972DC003FD3CA /* ContentPagerViewCell.xib */; };
+		CC82626D2969EEAC00B31F06 /* level3-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC82626C2969EEAC00B31F06 /* level3-2.mp3 */; };
+		CC82626F2969EEB300B31F06 /* level1-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC82626E2969EEB300B31F06 /* level1-2.mp3 */; };
+		CC8262712969EEBA00B31F06 /* level_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC8262702969EEBA00B31F06 /* level_2.mp3 */; };
+		CC826274296A476100B31F06 /* cat2.gif in Resources */ = {isa = PBXBuildFile; fileRef = CC826273296A476100B31F06 /* cat2.gif */; };
 		CC9FD25E29697B2900EDB4EB /* ExtensionTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9FD25D29697B2900EDB4EB /* ExtensionTimeInterval.swift */; };
 		CC9FD26029698DC700EDB4EB /* catcat.gif in Resources */ = {isa = PBXBuildFile; fileRef = CC9FD25F29698DC700EDB4EB /* catcat.gif */; };
 		CC9FD263296990E200EDB4EB /* catpng.gif in Resources */ = {isa = PBXBuildFile; fileRef = CC9FD262296990E200EDB4EB /* catpng.gif */; };
@@ -201,6 +205,10 @@
 		CC8074D5296942DC003FD3CA /* tet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tet.json; sourceTree = "<group>"; };
 		CC8074D7296972DC003FD3CA /* ContentPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPagerViewCell.swift; sourceTree = "<group>"; };
 		CC8074D8296972DC003FD3CA /* ContentPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentPagerViewCell.xib; sourceTree = "<group>"; };
+		CC82626C2969EEAC00B31F06 /* level3-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "level3-2.mp3"; sourceTree = "<group>"; };
+		CC82626E2969EEB300B31F06 /* level1-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "level1-2.mp3"; sourceTree = "<group>"; };
+		CC8262702969EEBA00B31F06 /* level_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = level_2.mp3; sourceTree = "<group>"; };
+		CC826273296A476100B31F06 /* cat2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cat2.gif; sourceTree = "<group>"; };
 		CC9FD25D29697B2900EDB4EB /* ExtensionTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTimeInterval.swift; sourceTree = "<group>"; };
 		CC9FD25F29698DC700EDB4EB /* catcat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = catcat.gif; sourceTree = "<group>"; };
 		CC9FD262296990E200EDB4EB /* catpng.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = catpng.gif; sourceTree = "<group>"; };
@@ -336,6 +344,10 @@
 		CC770D8729690B45004CEB59 /* LinkMp3 */ = {
 			isa = PBXGroup;
 			children = (
+				CC826273296A476100B31F06 /* cat2.gif */,
+				CC8262702969EEBA00B31F06 /* level_2.mp3 */,
+				CC82626E2969EEB300B31F06 /* level1-2.mp3 */,
+				CC82626C2969EEAC00B31F06 /* level3-2.mp3 */,
 				CC323B732969950800BF5DD5 /* blackcat.gif */,
 				CC9FD262296990E200EDB4EB /* catpng.gif */,
 				CC9FD25F29698DC700EDB4EB /* catcat.gif */,
@@ -560,12 +572,14 @@
 				CC770D7A29690AAC004CEB59 /* LaunchScreen.storyboard in Resources */,
 				CC770DFB29691DDF004CEB59 /* iCiel Finch ornaments.ttf in Resources */,
 				CC770DF929691DDF004CEB59 /* iCielAmerigraf.ttf in Resources */,
+				CC82626F2969EEB300B31F06 /* level1-2.mp3 in Resources */,
 				CC770E2229691DDF004CEB59 /* iCiel Kermel.ttf in Resources */,
 				CC8074D229694233003FD3CA /* medium.json in Resources */,
 				CC770DF629691DDF004CEB59 /* iCiel Pacifico.ttf in Resources */,
 				CC770DBC2969195D004CEB59 /* ChooseCardsVC.xib in Resources */,
 				CC323B762969A60C00BF5DD5 /* spin.mp3 in Resources */,
 				CC770D9229690D20004CEB59 /* CardFlip.mp3 in Resources */,
+				CC8262712969EEBA00B31F06 /* level_2.mp3 in Resources */,
 				CC770E1A29691DDF004CEB59 /* iCiel Alina.otf in Resources */,
 				CC770D9129690D20004CEB59 /* Click.mp3 in Resources */,
 				CC770E1529691DDF004CEB59 /* UVF LH Line1 Sans Thin.ttf in Resources */,
@@ -604,6 +618,7 @@
 				CC770E0F29691DDF004CEB59 /* Pony.ttf in Resources */,
 				CC770D8C29690CAB004CEB59 /* quay_chai.mp3 in Resources */,
 				CC8074D029694233003FD3CA /* easy.json in Resources */,
+				CC826274296A476100B31F06 /* cat2.gif in Resources */,
 				CC9FD26029698DC700EDB4EB /* catcat.gif in Resources */,
 				CC770E0629691DDF004CEB59 /* Gotham-Medium.otf in Resources */,
 				CC770E0929691DDF004CEB59 /* iCiel Crocante.otf in Resources */,
@@ -619,6 +634,7 @@
 				CC770DFA29691DDF004CEB59 /* UVF - Kizo.ttf in Resources */,
 				CC770D8E29690CC7004CEB59 /* alarm.mp3 in Resources */,
 				CC770E27296929F5004CEB59 /* luckycat2.gif in Resources */,
+				CC82626D2969EEAC00B31F06 /* level3-2.mp3 in Resources */,
 				CC770E1429691DDF004CEB59 /* ffonts.net.txt in Resources */,
 				CC770E1B29691DDF004CEB59 /* iCiel Altus Extra.ttf in Resources */,
 				CC770DC02969196C004CEB59 /* QuizGameVC.xib in Resources */,

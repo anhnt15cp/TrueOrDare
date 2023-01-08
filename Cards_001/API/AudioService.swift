@@ -33,8 +33,9 @@ class AudioService {
         downloadTask.resume()
     }
     
-    private func play(url:URL) {
+    private func play(url: URL?) {
         do {
+            guard let url = url else { return }
             audioPlayed = try AVAudioPlayer(contentsOf: url as URL)
             audioPlayed.prepareToPlay()
             audioPlayed.volume = 7.0
@@ -44,7 +45,11 @@ class AudioService {
         } catch {
             print("AVAudioPlayer init failed")
         }
-        
     }
+    
+    func stopMusic() {
+        audioPlayed.stop()
+    }
+    
 }
 

@@ -33,31 +33,31 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKE-cn-kfg">
-                    <rect key="frame" x="24" y="306" width="166" height="284"/>
+                    <rect key="frame" x="34" y="306" width="166" height="284"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="166" id="PUm-vy-ha0"/>
                         <constraint firstAttribute="height" constant="284" id="i3t-y4-f5g"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="Group 7226"/>
+                    <state key="normal" backgroundImage="Group 7265"/>
                     <connections>
                         <action selector="chuenhChoangbtn:" destination="-1" eventType="touchUpInside" id="tVF-w3-wur"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSL-FI-yJs">
-                    <rect key="frame" x="224" y="306" width="166" height="284"/>
+                    <rect key="frame" x="214" y="306" width="166" height="284"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="166" id="C1H-md-pQ9"/>
                         <constraint firstAttribute="height" constant="284" id="CGM-J0-Bm6"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="Group 7227"/>
+                    <state key="normal" backgroundImage="Group 7266-1"/>
                     <connections>
                         <action selector="tetbtn:" destination="-1" eventType="touchUpInside" id="jID-Sc-Bew"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chuếnh choáng" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxX-Ka-sL0">
-                    <rect key="frame" x="37" y="330" width="140" height="63.5"/>
+                    <rect key="frame" x="47" y="330" width="140" height="63.5"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="vUf-Cb-u1I"/>
                     </constraints>
@@ -66,7 +66,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tết yêu thương" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C7-ES-WaP">
-                    <rect key="frame" x="237" y="330" width="140" height="63.5"/>
+                    <rect key="frame" x="227" y="330" width="140" height="63.5"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="hfS-vv-c3g"/>
                     </constraints>
@@ -90,15 +90,15 @@
                 <constraint firstItem="CAe-50-Zuw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QkN-Ds-QWo"/>
                 <constraint firstItem="HxX-Ka-sL0" firstAttribute="centerX" secondItem="IKE-cn-kfg" secondAttribute="centerX" id="TOW-38-wI7"/>
                 <constraint firstItem="IKE-cn-kfg" firstAttribute="centerY" secondItem="CAe-50-Zuw" secondAttribute="centerY" id="g1x-r5-AUR"/>
-                <constraint firstItem="XSL-FI-yJs" firstAttribute="centerX" secondItem="CAe-50-Zuw" secondAttribute="centerX" constant="100" id="lwv-aP-f1Y"/>
-                <constraint firstItem="IKE-cn-kfg" firstAttribute="centerX" secondItem="CAe-50-Zuw" secondAttribute="centerX" constant="-100" id="nBj-CV-XVk"/>
+                <constraint firstItem="XSL-FI-yJs" firstAttribute="centerX" secondItem="CAe-50-Zuw" secondAttribute="centerX" constant="90" id="lwv-aP-f1Y"/>
+                <constraint firstItem="IKE-cn-kfg" firstAttribute="centerX" secondItem="CAe-50-Zuw" secondAttribute="centerX" constant="-90" id="nBj-CV-XVk"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </view>
     </objects>
     <resources>
-        <image name="Group 7226" width="166" height="283.5"/>
-        <image name="Group 7227" width="166" height="283.5"/>
+        <image name="Group 7265" width="176" height="293"/>
+        <image name="Group 7266-1" width="176" height="293"/>
         <image name="Home" width="390" height="844"/>
         <image name="arrow 2" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">

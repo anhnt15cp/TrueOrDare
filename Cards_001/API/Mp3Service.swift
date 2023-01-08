@@ -32,4 +32,12 @@ class Mp3Service {
             print("Error")
         }
     }
+    
+    func stopAudio() {
+        mp3Player.stop()
+    }
+    
+    func startAudio() {
+        mp3Player.play()
+    }
 }

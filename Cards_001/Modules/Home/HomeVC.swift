@@ -28,11 +28,13 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func acctionBtTop(_ sender: UIButton) {
+        Mp3Service.shared.stopAudio()
         let vc = ThemeVC()
         navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func acctionBtBot(_ sender: UIButton) {
+        Mp3Service.shared.stopAudio()
         let vc = QuizGameVC()
         navigationController?.pushViewController(vc, animated: true)
     }

@@ -18,30 +18,30 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvG-mG-HhM">
-                            <rect key="frame" x="26" y="230" width="362" height="400"/>
+                            <rect key="frame" x="26" y="220" width="362" height="395"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7248-1" translatesAutoresizingMaskIntoConstraints="NO" id="q1Y-Jf-DYa">
-                                    <rect key="frame" x="0.0" y="0.0" width="362" height="400"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="362" height="395"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cạn 10 ly cùng người ngồi phía bên phải" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOR-Mb-EaO">
-                                    <rect key="frame" x="10" y="70" width="342" height="49"/>
+                                    <rect key="frame" x="10" y="55" width="342" height="49"/>
                                     <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pmh-Hd-DAx">
-                                    <rect key="frame" x="16" y="159" width="330" height="162"/>
+                                    <rect key="frame" x="16" y="144" width="330" height="180"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="162" id="cK5-84-TcP"/>
+                                        <constraint firstAttribute="height" constant="180" id="J9X-0I-H1t"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="400" id="0FQ-ws-SRL"/>
+                                <constraint firstAttribute="height" constant="395" id="0FQ-ws-SRL"/>
                                 <constraint firstAttribute="trailing" secondItem="pmh-Hd-DAx" secondAttribute="trailing" constant="16" id="1Sh-CH-KNk"/>
                                 <constraint firstItem="q1Y-Jf-DYa" firstAttribute="top" secondItem="qvG-mG-HhM" secondAttribute="top" id="1rW-rz-fuM"/>
-                                <constraint firstItem="uOR-Mb-EaO" firstAttribute="top" secondItem="qvG-mG-HhM" secondAttribute="top" constant="70" id="9su-Vd-3bd"/>
+                                <constraint firstItem="uOR-Mb-EaO" firstAttribute="top" secondItem="qvG-mG-HhM" secondAttribute="top" constant="55" id="9su-Vd-3bd"/>
                                 <constraint firstItem="pmh-Hd-DAx" firstAttribute="leading" secondItem="qvG-mG-HhM" secondAttribute="leading" constant="16" id="Bbj-XA-OKy"/>
                                 <constraint firstAttribute="trailing" secondItem="uOR-Mb-EaO" secondAttribute="trailing" constant="10" id="Hzo-d8-p1C"/>
                                 <constraint firstItem="pmh-Hd-DAx" firstAttribute="top" secondItem="uOR-Mb-EaO" secondAttribute="bottom" constant="40" id="Smz-Ql-9Bf"/>
@@ -54,15 +54,15 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78f-NV-xVy">
-                            <rect key="frame" x="26" y="665" width="158" height="56"/>
-                            <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <rect key="frame" x="26" y="640" width="165" height="56"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="56" id="CTZ-Bz-rP0"/>
-                                <constraint firstAttribute="width" constant="158" id="KB8-32-NcJ"/>
+                                <constraint firstAttribute="width" constant="165" id="KB8-32-NcJ"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Bốc Lại">
+                            <state key="normal" title="Bốc lại" backgroundImage="Frame 7259-2">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
@@ -70,41 +70,39 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axl-8e-MZt">
-                            <rect key="frame" x="230" y="665" width="158" height="56"/>
-                            <color key="backgroundColor" red="0.94901961089999998" green="0.74117654560000001" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <rect key="frame" x="223" y="640" width="165" height="56"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="158" id="0Yz-1F-S6t"/>
+                                <constraint firstAttribute="width" constant="165" id="0Yz-1F-S6t"/>
                                 <constraint firstAttribute="height" constant="56" id="FKw-xZ-H7q"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Lượt Tiếp Theo">
+                            <state key="normal" title="Lượt tiếp theo" backgroundImage="Frame 7259-2">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
                                 <action selector="rightButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Hm-KA-VjP"/>
                             </connections>
                         </button>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackcat.gif" translatesAutoresizingMaskIntoConstraints="NO" id="vCa-NT-DXR">
-                            <rect key="frame" x="117" y="102" width="180" height="128"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat2.gif" translatesAutoresizingMaskIntoConstraints="NO" id="vCa-NT-DXR">
+                            <rect key="frame" x="35" y="28" width="344" height="242"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="180" id="5hU-TL-Lff"/>
-                                <constraint firstAttribute="height" constant="128" id="ivw-CV-xue"/>
-                            </constraints>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="78f-NV-xVy" firstAttribute="leading" secondItem="qvG-mG-HhM" secondAttribute="leading" id="3i1-4G-g2J"/>
                         <constraint firstItem="qvG-mG-HhM" firstAttribute="centerX" secondItem="ujL-xU-qwi" secondAttribute="centerX" id="5fL-f3-7KR"/>
+                        <constraint firstItem="vCa-NT-DXR" firstAttribute="leading" secondItem="ujL-xU-qwi" secondAttribute="leading" constant="35" id="H6N-dh-9jk"/>
+                        <constraint firstAttribute="trailing" secondItem="vCa-NT-DXR" secondAttribute="trailing" constant="35" id="Jva-ZI-VOf"/>
                         <constraint firstItem="Axl-8e-MZt" firstAttribute="trailing" secondItem="qvG-mG-HhM" secondAttribute="trailing" id="XED-nC-LnD"/>
+                        <constraint firstItem="qvG-mG-HhM" firstAttribute="top" secondItem="vCa-NT-DXR" secondAttribute="bottom" constant="-50" id="e44-JP-8ZO"/>
                         <constraint firstItem="Axl-8e-MZt" firstAttribute="top" secondItem="78f-NV-xVy" secondAttribute="top" id="gbn-We-7VB"/>
                         <constraint firstItem="vCa-NT-DXR" firstAttribute="centerX" secondItem="ujL-xU-qwi" secondAttribute="centerX" id="mrn-XF-TdO"/>
                         <constraint firstItem="qvG-mG-HhM" firstAttribute="width" secondItem="ujL-xU-qwi" secondAttribute="width" multiplier="3.5/4" id="td5-Vb-TuI"/>
-                        <constraint firstItem="qvG-mG-HhM" firstAttribute="top" secondItem="ujL-xU-qwi" secondAttribute="top" constant="230" id="uHV-Up-lnm"/>
-                        <constraint firstItem="vCa-NT-DXR" firstAttribute="top" secondItem="ujL-xU-qwi" secondAttribute="top" constant="102" id="vHk-A4-4hW"/>
-                        <constraint firstItem="78f-NV-xVy" firstAttribute="top" secondItem="qvG-mG-HhM" secondAttribute="bottom" constant="35" id="vUf-sA-e67"/>
+                        <constraint firstItem="qvG-mG-HhM" firstAttribute="top" secondItem="ujL-xU-qwi" secondAttribute="top" constant="220" id="uHV-Up-lnm"/>
+                        <constraint firstItem="78f-NV-xVy" firstAttribute="top" secondItem="qvG-mG-HhM" secondAttribute="bottom" constant="25" id="vUf-sA-e67"/>
                     </constraints>
                 </view>
             </subviews>
@@ -129,7 +127,8 @@
         </view>
     </objects>
     <resources>
+        <image name="Frame 7259-2" width="150" height="75"/>
         <image name="Group 7248-1" width="270" height="385"/>
-        <image name="blackcat.gif" width="500" height="426"/>
+        <image name="cat2.gif" width="480" height="242"/>
     </resources>
 </document>

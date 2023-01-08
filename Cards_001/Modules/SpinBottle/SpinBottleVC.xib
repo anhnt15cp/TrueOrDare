@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpinBottleVC" customModule="Cards_001" customModuleProvider="target">
             <connections>
+                <outlet property="backbtn" destination="0fv-h6-NP8" id="Fu8-Av-Hvr"/>
                 <outlet property="imageBottle" destination="o6Z-fa-OW6" id="H60-87-RqS"/>
                 <outlet property="leftButton" destination="zGs-vC-xZg" id="VYa-CX-aks"/>
                 <outlet property="rightButton" destination="yjX-FY-CgM" id="isv-lg-xEo"/>
@@ -45,31 +47,37 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ấn chai để quay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVn-YK-lAY">
-                    <rect key="frame" x="118" y="712" width="178.5" height="25"/>
+                    <rect key="frame" x="118" y="672" width="178.5" height="25"/>
                     <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGs-vC-xZg">
-                    <rect key="frame" x="33" y="667" width="158" height="56"/>
+                    <rect key="frame" x="33" y="652" width="158" height="56"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="158" id="EeJ-Au-p5F"/>
                         <constraint firstAttribute="height" constant="56" id="Wj1-Ev-G0F"/>
                     </constraints>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="Group 7221"/>
+                    <state key="normal" title="     Quay lại" backgroundImage="Group 7257-1">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="leftButton:" destination="-1" eventType="touchUpInside" id="tNO-Xw-Kkw"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjX-FY-CgM">
-                    <rect key="frame" x="223" y="667" width="158" height="56"/>
+                    <rect key="frame" x="223" y="652" width="158" height="56"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="158" id="jW3-l6-tSw"/>
                         <constraint firstAttribute="height" constant="56" id="q73-Zl-sod"/>
                     </constraints>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="Group 7225"/>
+                    <state key="normal" title="    Bốc bài" backgroundImage="Group 7256-1">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="rightButton:" destination="-1" eventType="touchUpInside" id="Ms0-NA-fv0"/>
                     </connections>
@@ -78,8 +86,8 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="pVn-YK-lAY" firstAttribute="top" secondItem="o6Z-fa-OW6" secondAttribute="bottom" constant="90" id="5VE-ZL-qcC"/>
-                <constraint firstItem="zGs-vC-xZg" firstAttribute="top" secondItem="o6Z-fa-OW6" secondAttribute="bottom" constant="45" id="DrQ-FD-P7D"/>
+                <constraint firstItem="pVn-YK-lAY" firstAttribute="top" secondItem="o6Z-fa-OW6" secondAttribute="bottom" constant="50" id="5VE-ZL-qcC"/>
+                <constraint firstItem="zGs-vC-xZg" firstAttribute="top" secondItem="o6Z-fa-OW6" secondAttribute="bottom" constant="30" id="DrQ-FD-P7D"/>
                 <constraint firstItem="pVn-YK-lAY" firstAttribute="centerX" secondItem="RkW-FT-ziV" secondAttribute="centerX" id="G2D-oA-3pl"/>
                 <constraint firstItem="0fv-h6-NP8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="HYc-2P-SN5"/>
                 <constraint firstItem="zGs-vC-xZg" firstAttribute="leading" secondItem="o6Z-fa-OW6" secondAttribute="leading" id="Sbq-ik-uBc"/>
@@ -98,9 +106,9 @@
     </objects>
     <resources>
         <image name="Group 7195" width="390" height="490.5"/>
-        <image name="Group 7221" width="158" height="56"/>
-        <image name="Group 7225" width="158" height="56"/>
         <image name="Group 7231" width="390" height="844"/>
+        <image name="Group 7256-1" width="169" height="56"/>
+        <image name="Group 7257-1" width="169" height="56"/>
         <image name="arrow 2" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -17,11 +17,5 @@ class ContentPagerViewCell: FSPagerViewCell {
             self.image.layer.masksToBounds = true
         }
     }
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+ 
 }

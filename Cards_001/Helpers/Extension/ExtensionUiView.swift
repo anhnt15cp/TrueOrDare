@@ -9,8 +9,10 @@ import Foundation
 import UIKit
 
 private let rotationAnimationKey = "rotationAnimationKey"
+var stop: CGFloat = 0
 
 extension UIView {
+    
     
     func startRotation(duration: CFTimeInterval, repeatCount: Float, clockwise: Bool) {
         // this helped figure out how to start/stop from current rotation angle
@@ -26,12 +28,15 @@ extension UIView {
         // animate rotating the view 360 degrees
         let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotationAnimation.fromValue = currentRotationAngle
+        print(currentRotationAngle)
         if clockwise {
             rotationAnimation.toValue = .pi * 2.0 + Double(currentRotationAngle)
+            
         }
         else {
             rotationAnimation.toValue = -.pi * 2.0 + Double(currentRotationAngle)
         }
+        stop = .pi * 2.0 + Double(currentRotationAngle)
         rotationAnimation.duration = duration
         rotationAnimation.repeatCount = repeatCount
         layer.add(rotationAnimation, forKey: rotationAnimationKey)
@@ -57,7 +62,8 @@ extension UIView {
         layer.removeAnimation(forKey: rotationAnimationKey)
         
         // rotate the view back to the correct rotation angle
-        let randomDouble = Double.random(in: 3.0..<6.0)
+        let randomDouble = Double.random(in: 0...100)
+        print(randomDouble)
         layer.transform = CATransform3DMakeRotation(randomDouble, 0, 0, 1)
     }
     
