@@ -15,6 +15,7 @@ class ShowInfoView: UIView {
             catcat.image = gif
         }
     }
+    
     var handlePop: (()->Void)?
     var handleFilipAgain: (()->Void)?
     
@@ -50,12 +51,12 @@ class ShowInfoView: UIView {
 
     @IBAction func leftButton(_ sender: UIButton) {
         self.handleFilipAgain?()
-        AudioService.shared.stopMusic()
+//        AudioService.shared.stopMusic()
         self.removeFromSuperview()
     }
     
     @IBAction func rightButton(_ sender: UIButton) {
-        AudioService.shared.stopMusic()
+//        AudioService.shared.stopMusic()
         self.handlePop?()
     }
     

@@ -867,6 +867,7 @@
 				DEVELOPMENT_TEAM = KD39G9W3UR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cards_001/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tết sum vầy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -897,6 +898,7 @@
 				DEVELOPMENT_TEAM = KD39G9W3UR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cards_001/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tết sum vầy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

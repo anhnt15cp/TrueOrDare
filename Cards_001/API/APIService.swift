@@ -23,9 +23,7 @@ class APIService {
                  completed(result.tet)
                  
              } catch  {
-                 completed(nil)
-                 print("Error")
-             }
+                 completed(nil)             }
          }
     }
     
@@ -41,7 +39,6 @@ class APIService {
                 completed(result.nhau)
                 
             } catch  {
-                print("Error")
                 completed(nil)
             }
         }
@@ -59,9 +56,7 @@ class APIService {
                 completed(result.easy)
                 
             } catch  {
-                completed(nil)
-                print("Error")
-            }
+                completed(nil)            }
         }
    }
     
@@ -77,9 +72,7 @@ class APIService {
                 completed(result.medium)
                 
             } catch  {
-                completed(nil)
-                print("Error")
-            }
+                completed(nil)            }
         }
    }
     
@@ -93,10 +86,8 @@ class APIService {
                 let json = try Data(contentsOf: url)
                 let result: Finish =  try! JSONDecoder().decode(Finish.self, from: json)
                 completed(result.hard)
-                
             } catch  {
                 completed(nil)
-                print("Error")
             }
         }
    }

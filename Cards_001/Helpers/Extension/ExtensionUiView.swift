@@ -63,7 +63,6 @@ extension UIView {
         
         // rotate the view back to the correct rotation angle
         let randomDouble = Double.random(in: 0...100)
-        print(randomDouble)
         layer.transform = CATransform3DMakeRotation(randomDouble, 0, 0, 1)
     }
     

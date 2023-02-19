@@ -23,6 +23,7 @@ class ChooseCardsVC: UIViewController {
     private var listItemDrink: [ListItemNhau] = []
     private var listItemNewYear: [ListItemTet] = []
     private let showInfoView: ShowInfoView = .instanceFromNib()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         checkTypeData()
